@@ -1,0 +1,66 @@
+//
+//  PrefixHeader.pch
+//  FusoWallet
+//
+//  Created by Developer on 2021/2/19.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <IrohaCrypto/IrohaCrypto-umbrella.h>
+#import <SocketRocket.h>
+#import "ZXNavigationBarController.h"
+#import "RpcRequest.h"
+#import "NSString+Base64.h"
+#import <FearlessUtils/FearlessUtils-umbrella.h>
+#import <FearlessUtils/FearlessUtils-Swift.h>
+#import "FusoWallet-Swift.h"
+#import "FusoWallet-Bridging-Header.h"
+
+#ifndef dispatch_main_async_safe
+#define dispatch_main_async_safe(block)\
+    if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {\
+        block();\
+    } else {\
+        dispatch_async(dispatch_get_main_queue(), block);\
+    }
+#endif
+#ifdef DEBUG
+#define NSLog(format, ...) printf("[%s] [文件名:%s:第%d行]\n[函数名:%s]\n%s\n", __TIME__,  [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__,__FUNCTION__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+#define NSLog(format, ...) nil
+#endif
+//空字符串
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+//空数组
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+//空字典
+#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+//空对象
+#define kObjectIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+//弱引用
+#define kWeakSelf(type)  __weak typeof(type) weak##type = type;
+//强引用
+#define kStrongSelf(type) __strong typeof(type) type = weak##type;
+
+#define Color241  [UIColor colorWithRed:241.0/255 green:241.0/255 blue:241.0/255 alpha:1]
+#define ColorRest  [UIColor colorWithRed:50.0/255 green:205.0/255 blue:50.0/255 alpha:1]
+//#define ColorWork  [UIColor colorWithRed:65.0/255 green:105.0/255 blue:225.0/255 alpha:1]
+#define ColorOrange  [UIColor colorWithRed:255.0/255 green:120.0/255 blue:90.0/255 alpha:1]
+#define ColorBlue  [UIColor colorWithRed:23/255.0 green:126/255.0 blue:214/255.0 alpha:1]
+#define kWindow [[UIApplication sharedApplication].windows firstObject]
+#define kIsBangsScreen ({\
+    BOOL isBangsScreen = NO; \
+    if (@available(iOS 11.0, *)) { \
+    UIWindow *window = [[UIApplication sharedApplication].windows firstObject]; \
+    isBangsScreen = window.safeAreaInsets.bottom > 0; \
+    } \
+    isBangsScreen; \
+})
+#endif /* PrefixHeader_pch */

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7cE-yQ-th2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,106 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVt-j4-rD4">
+                                <rect key="frame" x="163" y="108" width="88.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallet_Monochromatic" translatesAutoresizingMaskIntoConstraints="NO" id="ytS-S0-kTt">
+                                <rect key="frame" x="0.0" y="251.5" width="414" height="312.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ytS-S0-kTt" secondAttribute="height" multiplier="375:283" id="3nt-gD-8Gu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-0J-AWq">
+                                <rect key="frame" x="24" y="805" width="366" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Already have a wallet">
+                                    <color key="titleColor" name="CommonGrayColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-zC-uAP">
+                                <rect key="frame" x="24" y="733" width="366" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Create a new wallet" backgroundImage="buttonSelect">
+                                    <color key="titleColor" name="BackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pGz-EB-KE0" kind="show" id="plU-La-Cvr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ytS-S0-kTt" secondAttribute="trailing" id="5FN-Pf-GFa"/>
+                            <constraint firstItem="ytS-S0-kTt" firstAttribute="top" secondItem="wVt-j4-rD4" secondAttribute="bottom" constant="105" id="8yO-Nz-2qP"/>
+                            <constraint firstItem="wVt-j4-rD4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="AQA-ep-Ibe"/>
+                            <constraint firstItem="RN5-0J-AWq" firstAttribute="top" secondItem="fnv-zC-uAP" secondAttribute="bottom" constant="24" id="ByY-w9-QWn"/>
+                            <constraint firstItem="fnv-zC-uAP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Jm9-Cf-r5B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RN5-0J-AWq" secondAttribute="bottom" constant="28" id="Tz2-1s-35J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RN5-0J-AWq" secondAttribute="trailing" constant="24" id="XCO-Fi-5yf"/>
+                            <constraint firstItem="ytS-S0-kTt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cQM-Lo-GVG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fnv-zC-uAP" secondAttribute="trailing" constant="24" id="dzU-oy-fGF"/>
+                            <constraint firstItem="RN5-0J-AWq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="fRZ-ef-zWf"/>
+                            <constraint firstItem="wVt-j4-rD4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oZt-u0-ALr"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cQw-nh-2nW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="742.02898550724649" y="88.392857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j7m-is-2qc">
+            <objects>
+                <viewController id="pGz-EB-KE0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wfa-cy-sNL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Scb-hr-ud1"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JE1-Yk-6ns"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cy-op-G8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qOY-U5-vzO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cE-yQ-th2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YJJ-Sb-vke">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YEE-hF-9Ya"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wy1-cc-g3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168.11594202898553" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Wallet_Monochromatic" width="375" height="283"/>
+        <image name="buttonSelect" width="15.5" height="48"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.097999997437000275" green="0.10199999809265137" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CommonGrayColor">
+            <color red="0.60000002384185791" green="0.6119999885559082" blue="0.67799997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

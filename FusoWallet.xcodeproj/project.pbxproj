@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8B5E9C0E25DF64DC006C33B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C0D25DF64DC006C33B0 /* AppDelegate.m */; };
-		8B5E9C1125DF64DC006C33B0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1025DF64DC006C33B0 /* SceneDelegate.m */; };
 		8B5E9C1425DF64DC006C33B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1325DF64DC006C33B0 /* ViewController.m */; };
 		8B5E9C1725DF64DC006C33B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1525DF64DC006C33B0 /* Main.storyboard */; };
 		8B5E9C1925DF64DD006C33B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1825DF64DD006C33B0 /* Assets.xcassets */; };
@@ -16,6 +15,14 @@
 		8B5E9C1F25DF64DD006C33B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1E25DF64DD006C33B0 /* main.m */; };
 		8B5E9C2925DF64DD006C33B0 /* FusoWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C2825DF64DD006C33B0 /* FusoWalletTests.m */; };
 		8B5E9C3425DF64DD006C33B0 /* FusoWalletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C3325DF64DD006C33B0 /* FusoWalletUITests.m */; };
+		8B5E9C8425DFB721006C33B0 /* NSString+MyChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C8025DFB721006C33B0 /* NSString+MyChange.m */; };
+		8B5E9C8525DFB721006C33B0 /* NSData+MyChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C8125DFB721006C33B0 /* NSData+MyChange.m */; };
+		8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C8925DFB763006C33B0 /* NSString+Base64.m */; };
+		8B5E9C8E25DFB763006C33B0 /* RpcRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C8B25DFB763006C33B0 /* RpcRequest.m */; };
+		8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */; };
+		8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CAB25DFBECD006C33B0 /* File.swift */; };
+		8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */; };
+		A58D7BF63F1E7A408FF06863 /* Pods_FusoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FusoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D531713B34607407107D9FD /* Pods-FusoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.release.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		8B5E9C0925DF64DC006C33B0 /* FusoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FusoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5E9C0C25DF64DC006C33B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B5E9C0D25DF64DC006C33B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8B5E9C0F25DF64DC006C33B0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		8B5E9C1025DF64DC006C33B0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		8B5E9C1225DF64DC006C33B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8B5E9C1325DF64DC006C33B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8B5E9C1625DF64DC006C33B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +61,21 @@
 		8B5E9C2F25DF64DD006C33B0 /* FusoWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FusoWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5E9C3325DF64DD006C33B0 /* FusoWalletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FusoWalletUITests.m; sourceTree = "<group>"; };
 		8B5E9C3525DF64DD006C33B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B5E9C6425DFB4CD006C33B0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8B5E9C8025DFB721006C33B0 /* NSString+MyChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MyChange.m"; sourceTree = "<group>"; };
+		8B5E9C8125DFB721006C33B0 /* NSData+MyChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MyChange.m"; sourceTree = "<group>"; };
+		8B5E9C8225DFB721006C33B0 /* NSData+MyChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MyChange.h"; sourceTree = "<group>"; };
+		8B5E9C8325DFB721006C33B0 /* NSString+MyChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyChange.h"; sourceTree = "<group>"; };
+		8B5E9C8925DFB763006C33B0 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		8B5E9C8A25DFB763006C33B0 /* RpcRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RpcRequest.h; sourceTree = "<group>"; };
+		8B5E9C8B25DFB763006C33B0 /* RpcRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RpcRequest.m; sourceTree = "<group>"; };
+		8B5E9C8C25DFB763006C33B0 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		8B5E9C9225DFB792006C33B0 /* WebSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
+		8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketManager.m; sourceTree = "<group>"; };
+		8B5E9CAA25DFBECC006C33B0 /* FusoWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FusoWallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B5E9CAB25DFBECD006C33B0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageKeyFactory+Implicit.swift"; sourceTree = "<group>"; };
+		989BD21863DBE7F239680040 /* Pods-FusoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.debug.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58D7BF63F1E7A408FF06863 /* Pods_FusoWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +104,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A5D3B89C4A43DD3113F2698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82D31A7FE7C9CFB36C184E61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				989BD21863DBE7F239680040 /* Pods-FusoWallet.debug.xcconfig */,
+				4D531713B34607407107D9FD /* Pods-FusoWallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8B5E9C0025DF64DC006C33B0 = {
 			isa = PBXGroup;
 			children = (
+				8B5E9C6425DFB4CD006C33B0 /* PrefixHeader.pch */,
 				8B5E9C0B25DF64DC006C33B0 /* FusoWallet */,
 				8B5E9C2725DF64DD006C33B0 /* FusoWalletTests */,
 				8B5E9C3225DF64DD006C33B0 /* FusoWalletUITests */,
 				8B5E9C0A25DF64DC006C33B0 /* Products */,
+				82D31A7FE7C9CFB36C184E61 /* Pods */,
+				6A5D3B89C4A43DD3113F2698 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +147,9 @@
 		8B5E9C0B25DF64DC006C33B0 /* FusoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				8B5E9C7F25DFB6E6006C33B0 /* Tools */,
 				8B5E9C0C25DF64DC006C33B0 /* AppDelegate.h */,
 				8B5E9C0D25DF64DC006C33B0 /* AppDelegate.m */,
-				8B5E9C0F25DF64DC006C33B0 /* SceneDelegate.h */,
-				8B5E9C1025DF64DC006C33B0 /* SceneDelegate.m */,
 				8B5E9C1225DF64DC006C33B0 /* ViewController.h */,
 				8B5E9C1325DF64DC006C33B0 /* ViewController.m */,
 				8B5E9C1525DF64DC006C33B0 /* Main.storyboard */,
@@ -115,6 +157,8 @@
 				8B5E9C1A25DF64DD006C33B0 /* LaunchScreen.storyboard */,
 				8B5E9C1D25DF64DD006C33B0 /* Info.plist */,
 				8B5E9C1E25DF64DD006C33B0 /* main.m */,
+				8B5E9CAB25DFBECD006C33B0 /* File.swift */,
+				8B5E9CAA25DFBECC006C33B0 /* FusoWallet-Bridging-Header.h */,
 			);
 			path = FusoWallet;
 			sourceTree = "<group>";
@@ -137,6 +181,24 @@
 			path = FusoWalletUITests;
 			sourceTree = "<group>";
 		};
+		8B5E9C7F25DFB6E6006C33B0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */,
+				8B5E9C9225DFB792006C33B0 /* WebSocketManager.h */,
+				8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */,
+				8B5E9C8A25DFB763006C33B0 /* RpcRequest.h */,
+				8B5E9C8B25DFB763006C33B0 /* RpcRequest.m */,
+				8B5E9C8C25DFB763006C33B0 /* NSString+Base64.h */,
+				8B5E9C8925DFB763006C33B0 /* NSString+Base64.m */,
+				8B5E9C8225DFB721006C33B0 /* NSData+MyChange.h */,
+				8B5E9C8125DFB721006C33B0 /* NSData+MyChange.m */,
+				8B5E9C8325DFB721006C33B0 /* NSString+MyChange.h */,
+				8B5E9C8025DFB721006C33B0 /* NSString+MyChange.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B5E9C3825DF64DD006C33B0 /* Build configuration list for PBXNativeTarget "FusoWallet" */;
 			buildPhases = (
+				D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */,
 				8B5E9C0525DF64DC006C33B0 /* Sources */,
 				8B5E9C0625DF64DC006C33B0 /* Frameworks */,
 				8B5E9C0725DF64DC006C33B0 /* Resources */,
+				26ED2421443969264ED6D0C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +267,7 @@
 				TargetAttributes = {
 					8B5E9C0825DF64DC006C33B0 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					8B5E9C2325DF64DD006C33B0 = {
 						CreatedOnToolsVersion = 12.4;
@@ -261,15 +326,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26ED2421443969264ED6D0C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FusoWallet/Pods-FusoWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FusoWallet/Pods-FusoWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FusoWallet/Pods-FusoWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FusoWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B5E9C0525DF64DC006C33B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */,
 				8B5E9C1425DF64DC006C33B0 /* ViewController.m in Sources */,
+				8B5E9C8425DFB721006C33B0 /* NSString+MyChange.m in Sources */,
 				8B5E9C0E25DF64DC006C33B0 /* AppDelegate.m in Sources */,
+				8B5E9C8525DFB721006C33B0 /* NSData+MyChange.m in Sources */,
 				8B5E9C1F25DF64DD006C33B0 /* main.m in Sources */,
-				8B5E9C1125DF64DC006C33B0 /* SceneDelegate.m in Sources */,
+				8B5E9C8E25DFB763006C33B0 /* RpcRequest.m in Sources */,
+				8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */,
+				8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */,
+				8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +478,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -422,6 +536,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -438,11 +553,16 @@
 		};
 		8B5E9C3925DF64DD006C33B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 989BD21863DBE7F239680040 /* Pods-FusoWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3XD74TETRA;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = FusoWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,17 +570,25 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lxd.FusoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FusoWallet/FusoWallet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8B5E9C3A25DF64DD006C33B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D531713B34607407107D9FD /* Pods-FusoWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3XD74TETRA;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = FusoWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +596,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lxd.FusoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FusoWallet/FusoWallet-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -475,6 +605,7 @@
 		8B5E9C3C25DF64DD006C33B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XD74TETRA;
@@ -495,6 +626,7 @@
 		8B5E9C3D25DF64DD006C33B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XD74TETRA;
@@ -515,6 +647,7 @@
 		8B5E9C3F25DF64DD006C33B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XD74TETRA;
 				INFOPLIST_FILE = FusoWalletUITests/Info.plist;
@@ -533,6 +666,7 @@
 		8B5E9C4025DF64DD006C33B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XD74TETRA;
 				INFOPLIST_FILE = FusoWalletUITests/Info.plist;
