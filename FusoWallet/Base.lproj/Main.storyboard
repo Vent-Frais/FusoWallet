@@ -5,39 +5,54 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPPOSans-B.ttf">
+            <string>OPPOSans-B</string>
+        </array>
+        <array key="OPPOSans-H.ttf">
+            <string>OPPOSans-H</string>
+        </array>
+        <array key="OPPOSans-M.ttf">
+            <string>OPPOSans-M</string>
+        </array>
+        <array key="OPPOSans-R.ttf">
+            <string>OPPOSans-R</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login Regist View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginRegistViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginRegistViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVt-j4-rD4">
-                                <rect key="frame" x="163" y="108" width="88.5" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <rect key="frame" x="163.5" y="108" width="87.5" height="37.5"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-B" family="OPPOSans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallet_Monochromatic" translatesAutoresizingMaskIntoConstraints="NO" id="ytS-S0-kTt">
-                                <rect key="frame" x="0.0" y="251.5" width="414" height="312.5"/>
+                                <rect key="frame" x="0.0" y="250.5" width="414" height="312.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ytS-S0-kTt" secondAttribute="height" multiplier="375:283" id="3nt-gD-8Gu"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-0J-AWq">
                                 <rect key="frame" x="24" y="805" width="366" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
                                 <state key="normal" title="Already have a wallet">
                                     <color key="titleColor" name="CommonGrayColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-zC-uAP">
                                 <rect key="frame" x="24" y="733" width="366" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
                                 <state key="normal" title="Create a new wallet" backgroundImage="buttonSelect">
                                     <color key="titleColor" name="BackgroundColor"/>
                                 </state>
@@ -47,7 +62,6 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ytS-S0-kTt" secondAttribute="trailing" id="5FN-Pf-GFa"/>
                             <constraint firstItem="ytS-S0-kTt" firstAttribute="top" secondItem="wVt-j4-rD4" secondAttribute="bottom" constant="105" id="8yO-Nz-2qP"/>
@@ -68,26 +82,275 @@
             </objects>
             <point key="canvasLocation" x="742.02898550724649" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Wallet Description View Controller-->
         <scene sceneID="j7m-is-2qc">
             <objects>
-                <viewController id="pGz-EB-KE0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateWalletDescriptionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pGz-EB-KE0" customClass="CreateWalletDescriptionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wfa-cy-sNL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please back up your wallet immediately!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-bW-aSG">
+                                <rect key="frame" x="24" y="96" width="366" height="56"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the next step, you will see 12 words that allow you to restore your wallet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M94-Mh-lay">
+                                <rect key="frame" x="24" y="160" width="366" height="37.5"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
+                                <color key="textColor" name="CommonGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-gD-5YT">
+                                <rect key="frame" x="0.0" y="213.5" width="414" height="312.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TRb-gD-5YT" secondAttribute="height" multiplier="375:283" id="DwC-ko-h5w"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcQ-SH-dVk">
+                                <rect key="frame" x="24" y="786" width="366" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="gAE-th-Wi0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OPPOSans-B" family="OPPOSans" pointSize="16"/>
+                                <state key="normal" title="Next" backgroundImage="button">
+                                    <color key="titleColor" name="BackgroundColor"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonSelect"/>
+                                <connections>
+                                    <action selector="clickNextButton:" destination="pGz-EB-KE0" eventType="touchUpInside" id="obV-Zs-Ezp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="I understand that if I lose the recovery word, I will not be able to access my wallet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYC-Hw-BCX">
+                                <rect key="frame" x="52" y="734" width="338" height="28"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-R" family="OPPOSans" pointSize="12"/>
+                                <color key="textColor" name="CommonGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlb-nh-72g">
+                                <rect key="frame" x="24" y="736" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Obn-fa-4bW"/>
+                                    <constraint firstAttribute="height" constant="24" id="gZS-TN-2qm"/>
+                                </constraints>
+                                <state key="normal" image="deSelected"/>
+                                <state key="selected" image="Selected"/>
+                                <connections>
+                                    <action selector="clickAgreeButton:" destination="pGz-EB-KE0" eventType="touchUpInside" id="uWq-M7-p29"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Scb-hr-ud1"/>
-                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M94-Mh-lay" firstAttribute="leading" secondItem="Scb-hr-ud1" secondAttribute="leading" constant="24" id="Be7-FA-ggd"/>
+                            <constraint firstItem="M94-Mh-lay" firstAttribute="top" secondItem="2C3-bW-aSG" secondAttribute="bottom" constant="8" id="Bx8-JF-jzC"/>
+                            <constraint firstItem="vlb-nh-72g" firstAttribute="leading" secondItem="Scb-hr-ud1" secondAttribute="leading" constant="24" id="Dch-VL-6gR"/>
+                            <constraint firstItem="Scb-hr-ud1" firstAttribute="trailing" secondItem="2C3-bW-aSG" secondAttribute="trailing" constant="24" id="Edv-s8-OQy"/>
+                            <constraint firstItem="TRb-gD-5YT" firstAttribute="leading" secondItem="Scb-hr-ud1" secondAttribute="leading" id="FMI-bm-qd4"/>
+                            <constraint firstItem="eYC-Hw-BCX" firstAttribute="centerY" secondItem="vlb-nh-72g" secondAttribute="centerY" id="H6u-gC-o92"/>
+                            <constraint firstItem="mcQ-SH-dVk" firstAttribute="top" secondItem="eYC-Hw-BCX" secondAttribute="bottom" constant="24" id="OLZ-s6-eBf"/>
+                            <constraint firstItem="Scb-hr-ud1" firstAttribute="bottom" secondItem="mcQ-SH-dVk" secondAttribute="bottom" constant="28" id="a90-ii-SCW"/>
+                            <constraint firstItem="Scb-hr-ud1" firstAttribute="trailing" secondItem="TRb-gD-5YT" secondAttribute="trailing" id="bzt-lC-MYW"/>
+                            <constraint firstItem="Scb-hr-ud1" firstAttribute="trailing" secondItem="mcQ-SH-dVk" secondAttribute="trailing" constant="24" id="ceV-w0-E9X"/>
+                            <constraint firstItem="2C3-bW-aSG" firstAttribute="top" secondItem="Scb-hr-ud1" secondAttribute="top" constant="8" id="hYu-1V-Eea"/>
+                            <constraint firstItem="TRb-gD-5YT" firstAttribute="top" secondItem="M94-Mh-lay" secondAttribute="bottom" constant="16" id="oZr-8s-YPR"/>
+                            <constraint firstItem="Scb-hr-ud1" firstAttribute="trailing" secondItem="M94-Mh-lay" secondAttribute="trailing" constant="24" id="uoQ-AN-rJi"/>
+                            <constraint firstItem="2C3-bW-aSG" firstAttribute="leading" secondItem="Scb-hr-ud1" secondAttribute="leading" constant="24" id="v4S-g0-7cX"/>
+                            <constraint firstItem="eYC-Hw-BCX" firstAttribute="leading" secondItem="vlb-nh-72g" secondAttribute="trailing" constant="4" id="y97-sK-zVZ"/>
+                            <constraint firstItem="Scb-hr-ud1" firstAttribute="trailing" secondItem="eYC-Hw-BCX" secondAttribute="trailing" constant="24" id="ygl-nG-MSm"/>
+                            <constraint firstItem="mcQ-SH-dVk" firstAttribute="leading" secondItem="Scb-hr-ud1" secondAttribute="leading" constant="24" id="zIn-24-i8U"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JE1-Yk-6ns"/>
+                    <connections>
+                        <outlet property="agreeButton" destination="vlb-nh-72g" id="BHo-5P-2S9"/>
+                        <outlet property="nextButton" destination="mcQ-SH-dVk" id="4of-VJ-fPx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Cy-op-G8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="88"/>
+            <point key="canvasLocation" x="1679.7101449275362" y="87.723214285714278"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Mnemonic View Controller-->
+        <scene sceneID="vN9-83-S67">
+            <objects>
+                <viewController storyboardIdentifier="MnemonicViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jpq-VG-pH3" customClass="MnemonicViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k3p-kp-Yii">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your mnemonic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkT-mg-abJ">
+                                <rect key="frame" x="24" y="52" width="366" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gCg-Hj-J5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write down or copy these words in the correct order and keep them in a safe place" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGG-pW-gI4">
+                                <rect key="frame" x="24" y="120" width="366" height="37.5"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
+                                <color key="textColor" name="CommonGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nvz-UO-5VC">
+                                <rect key="frame" x="24" y="181.5" width="366" height="518.5"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fvA-DU-PvA">
+                                    <size key="itemSize" width="70" height="32"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="50"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionViewCell" id="fya-hi-xA0" customClass="MnemonicCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3g2-aO-4d0">
+                                            <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mnemonic" translatesAutoresizingMaskIntoConstraints="NO" id="ny9-Dj-5ro">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mdnemonic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-6l-QeM">
+                                                    <rect key="frame" x="8" y="6.5" width="151" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="t7f-AF-hxY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
+                                                    <color key="textColor" name="CommonGreenColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ny9-Dj-5ro" secondAttribute="bottom" id="EXP-9G-qWQ"/>
+                                                <constraint firstItem="6cp-6l-QeM" firstAttribute="top" secondItem="3g2-aO-4d0" secondAttribute="top" constant="6.5" id="FOS-L4-cQe"/>
+                                                <constraint firstItem="ny9-Dj-5ro" firstAttribute="leading" secondItem="3g2-aO-4d0" secondAttribute="leading" id="MpN-pf-Lbr"/>
+                                                <constraint firstItem="ny9-Dj-5ro" firstAttribute="top" secondItem="3g2-aO-4d0" secondAttribute="top" id="Wek-z5-4kE"/>
+                                                <constraint firstAttribute="trailing" secondItem="6cp-6l-QeM" secondAttribute="trailing" constant="8" id="h6g-wj-ezc"/>
+                                                <constraint firstAttribute="bottom" secondItem="6cp-6l-QeM" secondAttribute="bottom" constant="6.5" id="hVi-iZ-Gy0"/>
+                                                <constraint firstItem="6cp-6l-QeM" firstAttribute="leading" secondItem="3g2-aO-4d0" secondAttribute="leading" constant="8" id="nr9-4a-b5v"/>
+                                                <constraint firstAttribute="trailing" secondItem="ny9-Dj-5ro" secondAttribute="trailing" id="q1s-3V-hGv"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="167" height="32"/>
+                                        <connections>
+                                            <outlet property="mnemonicLabel" destination="6cp-6l-QeM" id="dLi-Zl-6yv"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionReusableView" id="P67-ox-Qev" customClass="MnemonicCollectionReusableView">
+                                    <rect key="frame" x="0.0" y="32" width="366" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="M4Y-Fv-ccX">
+                                            <rect key="frame" x="97" y="10.5" width="172" height="29"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWj-yZ-7W8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="34" height="29"/>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
+                                                    <state key="normal" title="Copy">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25T-gN-UXe">
+                                                    <rect key="frame" x="66" y="0.0" width="106" height="29"/>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
+                                                    <state key="normal" title="Display QR code">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="M4Y-Fv-ccX" firstAttribute="centerY" secondItem="P67-ox-Qev" secondAttribute="centerY" id="OzD-FS-V6s"/>
+                                        <constraint firstItem="M4Y-Fv-ccX" firstAttribute="centerX" secondItem="P67-ox-Qev" secondAttribute="centerX" id="wtY-PZ-fGe"/>
+                                    </constraints>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jpq-VG-pH3" id="9h3-bw-nfX"/>
+                                    <outlet property="delegate" destination="Jpq-VG-pH3" id="fzr-zJ-5ug"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLD-mW-6Bo">
+                                <rect key="frame" x="24" y="786" width="366" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Q9L-kk-FMw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OPPOSans-B" family="OPPOSans" pointSize="16"/>
+                                <state key="normal" title="Next" backgroundImage="button">
+                                    <color key="titleColor" name="BackgroundColor"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonSelect"/>
+                                <connections>
+                                    <action selector="clickNextButton:" destination="pGz-EB-KE0" eventType="touchUpInside" id="9Hf-9W-9YT"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-hK-AAK">
+                                <rect key="frame" x="24" y="724" width="366" height="46"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caveat" translatesAutoresizingMaskIntoConstraints="NO" id="t6U-da-b8A">
+                                        <rect key="frame" x="8" y="15" width="16" height="16"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Do not share the particle with anyone, store it safely" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9U-Zc-SPy">
+                                        <rect key="frame" x="32" y="16" width="302" height="14"/>
+                                        <fontDescription key="fontDescription" name="OPPOSans-R" family="OPPOSans" pointSize="12"/>
+                                        <color key="textColor" name="CommonGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="AlertBGColor"/>
+                                <constraints>
+                                    <constraint firstItem="L9U-Zc-SPy" firstAttribute="top" secondItem="gdB-hK-AAK" secondAttribute="top" constant="16" id="9Ow-vd-pUY"/>
+                                    <constraint firstItem="t6U-da-b8A" firstAttribute="leading" secondItem="gdB-hK-AAK" secondAttribute="leading" constant="8" id="9mY-mZ-HZm"/>
+                                    <constraint firstAttribute="bottom" secondItem="L9U-Zc-SPy" secondAttribute="bottom" constant="16" id="XjH-FK-P81"/>
+                                    <constraint firstItem="t6U-da-b8A" firstAttribute="centerY" secondItem="gdB-hK-AAK" secondAttribute="centerY" id="YV5-Wb-pc8"/>
+                                    <constraint firstItem="L9U-Zc-SPy" firstAttribute="leading" secondItem="t6U-da-b8A" secondAttribute="trailing" constant="8" id="gkM-7b-o3S"/>
+                                    <constraint firstAttribute="trailing" secondItem="L9U-Zc-SPy" secondAttribute="trailing" constant="32" id="zSr-Kj-5ZI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C4D-2f-nuH"/>
+                        <constraints>
+                            <constraint firstItem="Nvz-UO-5VC" firstAttribute="top" secondItem="LGG-pW-gI4" secondAttribute="bottom" constant="24" id="5ZG-1R-G1k"/>
+                            <constraint firstItem="C4D-2f-nuH" firstAttribute="trailing" secondItem="nLD-mW-6Bo" secondAttribute="trailing" constant="24" id="Aon-ms-PSW"/>
+                            <constraint firstItem="WkT-mg-abJ" firstAttribute="top" secondItem="C4D-2f-nuH" secondAttribute="top" constant="8" id="Bas-UZ-u9E"/>
+                            <constraint firstItem="LGG-pW-gI4" firstAttribute="top" secondItem="WkT-mg-abJ" secondAttribute="bottom" constant="8" id="BwV-OT-TNE"/>
+                            <constraint firstItem="nLD-mW-6Bo" firstAttribute="top" secondItem="gdB-hK-AAK" secondAttribute="bottom" constant="16" id="H6T-qR-6Af"/>
+                            <constraint firstItem="WkT-mg-abJ" firstAttribute="leading" secondItem="C4D-2f-nuH" secondAttribute="leading" constant="24" id="KQZ-ph-lVJ"/>
+                            <constraint firstItem="C4D-2f-nuH" firstAttribute="trailing" secondItem="LGG-pW-gI4" secondAttribute="trailing" constant="24" id="NFC-2v-Sgo"/>
+                            <constraint firstItem="C4D-2f-nuH" firstAttribute="bottom" secondItem="nLD-mW-6Bo" secondAttribute="bottom" constant="28" id="aPg-5b-cAc"/>
+                            <constraint firstItem="C4D-2f-nuH" firstAttribute="trailing" secondItem="WkT-mg-abJ" secondAttribute="trailing" constant="24" id="agv-v1-xT4"/>
+                            <constraint firstItem="nLD-mW-6Bo" firstAttribute="leading" secondItem="C4D-2f-nuH" secondAttribute="leading" constant="24" id="dGa-cs-iYx"/>
+                            <constraint firstItem="Nvz-UO-5VC" firstAttribute="leading" secondItem="C4D-2f-nuH" secondAttribute="leading" constant="24" id="fPJ-k9-QYU"/>
+                            <constraint firstItem="C4D-2f-nuH" firstAttribute="trailing" secondItem="Nvz-UO-5VC" secondAttribute="trailing" constant="24" id="jmg-64-0NS"/>
+                            <constraint firstItem="gdB-hK-AAK" firstAttribute="leading" secondItem="C4D-2f-nuH" secondAttribute="leading" constant="24" id="kva-B7-Bx1"/>
+                            <constraint firstItem="C4D-2f-nuH" firstAttribute="trailing" secondItem="gdB-hK-AAK" secondAttribute="trailing" constant="24" id="p4s-Yf-Hpq"/>
+                            <constraint firstItem="gdB-hK-AAK" firstAttribute="top" secondItem="Nvz-UO-5VC" secondAttribute="bottom" constant="24" id="rXv-ag-s78"/>
+                            <constraint firstItem="LGG-pW-gI4" firstAttribute="leading" secondItem="C4D-2f-nuH" secondAttribute="leading" constant="24" id="sVw-oe-VFU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mnemonicCollectionView" destination="Nvz-UO-5VC" id="jVZ-ah-svA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5F-KO-gp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598.5507246376815" y="78.348214285714278"/>
+        </scene>
+        <!--Navigation Bar Navigation Controller-->
         <scene sceneID="qOY-U5-vzO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cE-yQ-th2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cE-yQ-th2" customClass="ZXNavigationBarNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YJJ-Sb-vke">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -104,13 +367,25 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Mnemonic" width="15.5" height="14.5"/>
+        <image name="Selected" width="16" height="16"/>
         <image name="Wallet_Monochromatic" width="375" height="283"/>
+        <image name="button" width="15.5" height="48"/>
         <image name="buttonSelect" width="15.5" height="48"/>
+        <image name="caveat" width="16" height="16"/>
+        <image name="deSelected" width="16" height="16"/>
+        <image name="note" width="375" height="283"/>
+        <namedColor name="AlertBGColor">
+            <color red="0.98000001907348633" green="0.67799997329711914" blue="0.078000001609325409" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="BackgroundColor">
             <color red="0.097999997437000275" green="0.10199999809265137" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CommonGrayColor">
             <color red="0.60000002384185791" green="0.6119999885559082" blue="0.67799997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CommonGreenColor">
+            <color red="0.067000001668930054" green="0.92500001192092896" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

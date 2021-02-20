@@ -12,13 +12,20 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import <IrohaCrypto/IrohaCrypto-umbrella.h>
 #import <SocketRocket.h>
-#import "ZXNavigationBarController.h"
+#import <ZXNavigationBarController.h>
+#import <ZXNavigationBarTableViewController.h>
 #import "RpcRequest.h"
 #import "NSString+Base64.h"
 #import <FearlessUtils/FearlessUtils-umbrella.h>
 #import <FearlessUtils/FearlessUtils-Swift.h>
 #import "FusoWallet-Swift.h"
 #import "FusoWallet-Bridging-Header.h"
+#import <MJExtension.h>
+#import <AFNetworking.h>
+#import "BaseViewController.h"
+#import "BaseNavViewController.h"
+#import "BaseNavTableViewController.h"
+#import "RpcRequest.h"
 
 #ifndef dispatch_main_async_safe
 #define dispatch_main_async_safe(block)\
@@ -63,4 +70,7 @@
     } \
     isBangsScreen; \
 })
+
+#define Screen_Width [UIScreen mainScreen].bounds.size.width
+#define Screen_Height [UIScreen mainScreen].bounds.size.height
 #endif /* PrefixHeader_pch */

