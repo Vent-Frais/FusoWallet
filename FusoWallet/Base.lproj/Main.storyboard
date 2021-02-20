@@ -102,7 +102,7 @@
                                 <color key="textColor" name="CommonGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-gD-5YT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Note" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-gD-5YT">
                                 <rect key="frame" x="0.0" y="213.5" width="414" height="312.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TRb-gD-5YT" secondAttribute="height" multiplier="375:283" id="DwC-ko-h5w"/>
@@ -368,13 +368,13 @@
     </scenes>
     <resources>
         <image name="Mnemonic" width="15.5" height="14.5"/>
+        <image name="Note" width="375" height="283"/>
         <image name="Selected" width="16" height="16"/>
         <image name="Wallet_Monochromatic" width="375" height="283"/>
         <image name="button" width="15.5" height="48"/>
         <image name="buttonSelect" width="15.5" height="48"/>
         <image name="caveat" width="16" height="16"/>
         <image name="deSelected" width="16" height="16"/>
-        <image name="note" width="375" height="283"/>
         <namedColor name="AlertBGColor">
             <color red="0.98000001907348633" green="0.67799997329711914" blue="0.078000001609325409" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
