@@ -9,8 +9,10 @@
 
 @implementation MnemonicCollectionViewCell
 - (void)showMnemonic{
-    if (_mnemonic && _indexString) {
+    if (_indexString) {
        _mnemonicLabel.attributedText = [RpcRequest getString:_indexString andFontSize:14 firstFontColor:[UIColor colorNamed:@"CommonGReenColor50"] secondStr:_mnemonic andSecondFontSize:14 secondFontColor:[UIColor colorNamed:@"CommonGreenColor"]];
+    }else{
+        _mnemonicLabel.text = _mnemonic;
     }
 }
 @end

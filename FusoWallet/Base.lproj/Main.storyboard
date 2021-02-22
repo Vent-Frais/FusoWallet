@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7cE-yQ-th2">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -28,30 +28,30 @@
             <objects>
                 <viewController storyboardIdentifier="LoginRegistViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginRegistViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVt-j4-rD4">
-                                <rect key="frame" x="163.5" y="108" width="87.5" height="37.5"/>
+                                <rect key="frame" x="133" y="64" width="109" height="42.5"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-B" family="OPPOSans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallet_Monochromatic" translatesAutoresizingMaskIntoConstraints="NO" id="ytS-S0-kTt">
-                                <rect key="frame" x="0.0" y="250.5" width="414" height="312.5"/>
+                                <rect key="frame" x="0.0" y="211.5" width="375" height="283"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ytS-S0-kTt" secondAttribute="height" multiplier="375:283" id="3nt-gD-8Gu"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-0J-AWq">
-                                <rect key="frame" x="24" y="805" width="366" height="29"/>
+                                <rect key="frame" x="24" y="608" width="327" height="31"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
                                 <state key="normal" title="Already have a wallet">
                                     <color key="titleColor" name="CommonGrayColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-zC-uAP">
-                                <rect key="frame" x="24" y="733" width="366" height="48"/>
+                                <rect key="frame" x="24" y="536" width="327" height="48"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
                                 <state key="normal" title="Create a new wallet" backgroundImage="buttonSelect">
                                     <color key="titleColor" name="BackgroundColor"/>
@@ -87,29 +87,29 @@
             <objects>
                 <viewController storyboardIdentifier="CreateWalletDescriptionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pGz-EB-KE0" customClass="CreateWalletDescriptionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wfa-cy-sNL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please back up your wallet immediately!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-bW-aSG">
-                                <rect key="frame" x="24" y="96" width="366" height="56"/>
+                                <rect key="frame" x="24" y="52" width="327" height="63.5"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the next step, you will see 12 words that allow you to restore your wallet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M94-Mh-lay">
-                                <rect key="frame" x="24" y="160" width="366" height="37.5"/>
+                                <rect key="frame" x="24" y="123.5" width="327" height="42.5"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
                                 <color key="textColor" name="CommonGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Note" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-gD-5YT">
-                                <rect key="frame" x="0.0" y="213.5" width="414" height="312.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-gD-5YT">
+                                <rect key="frame" x="0.0" y="182" width="375" height="283"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TRb-gD-5YT" secondAttribute="height" multiplier="375:283" id="DwC-ko-h5w"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcQ-SH-dVk">
-                                <rect key="frame" x="24" y="786" width="366" height="48"/>
+                                <rect key="frame" x="24" y="591" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="gAE-th-Wi0"/>
                                 </constraints>
@@ -123,13 +123,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="I understand that if I lose the recovery word, I will not be able to access my wallet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYC-Hw-BCX">
-                                <rect key="frame" x="52" y="734" width="338" height="28"/>
+                                <rect key="frame" x="52" y="535" width="299" height="32"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-R" family="OPPOSans" pointSize="12"/>
                                 <color key="textColor" name="CommonGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlb-nh-72g">
-                                <rect key="frame" x="24" y="736" width="24" height="24"/>
+                                <rect key="frame" x="24" y="539" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="Obn-fa-4bW"/>
                                     <constraint firstAttribute="height" constant="24" id="gZS-TN-2qm"/>
@@ -177,11 +177,11 @@
             <objects>
                 <viewController storyboardIdentifier="MnemonicViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jpq-VG-pH3" customClass="MnemonicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k3p-kp-Yii">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your mnemonic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkT-mg-abJ">
-                                <rect key="frame" x="24" y="52" width="366" height="60"/>
+                                <rect key="frame" x="24" y="8" width="327" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="gCg-Hj-J5a"/>
                                 </constraints>
@@ -190,23 +190,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write down or copy these words in the correct order and keep them in a safe place" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGG-pW-gI4">
-                                <rect key="frame" x="24" y="120" width="366" height="37.5"/>
+                                <rect key="frame" x="24" y="76" width="327" height="63.5"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
                                 <color key="textColor" name="CommonGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nvz-UO-5VC">
-                                <rect key="frame" x="24" y="181.5" width="366" height="518.5"/>
+                                <rect key="frame" x="24" y="163.5" width="327" height="323.5"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fvA-DU-PvA">
                                     <size key="itemSize" width="70" height="32"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionViewCell" id="fya-hi-xA0" customClass="MnemonicCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                        <rect key="frame" x="80" y="0.0" width="167" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3g2-aO-4d0">
                                             <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
@@ -242,42 +242,13 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionReusableView" id="P67-ox-Qev" customClass="MnemonicCollectionReusableView">
-                                    <rect key="frame" x="0.0" y="32" width="366" height="50"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="M4Y-Fv-ccX">
-                                            <rect key="frame" x="97" y="10.5" width="172" height="29"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWj-yZ-7W8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="34" height="29"/>
-                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
-                                                    <state key="normal" title="Copy">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25T-gN-UXe">
-                                                    <rect key="frame" x="66" y="0.0" width="106" height="29"/>
-                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
-                                                    <state key="normal" title="Display QR code">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="M4Y-Fv-ccX" firstAttribute="centerY" secondItem="P67-ox-Qev" secondAttribute="centerY" id="OzD-FS-V6s"/>
-                                        <constraint firstItem="M4Y-Fv-ccX" firstAttribute="centerX" secondItem="P67-ox-Qev" secondAttribute="centerX" id="wtY-PZ-fGe"/>
-                                    </constraints>
-                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="Jpq-VG-pH3" id="9h3-bw-nfX"/>
                                     <outlet property="delegate" destination="Jpq-VG-pH3" id="fzr-zJ-5ug"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLD-mW-6Bo">
-                                <rect key="frame" x="24" y="786" width="366" height="48"/>
+                                <rect key="frame" x="24" y="591" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Q9L-kk-FMw"/>
                                 </constraints>
@@ -291,13 +262,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-hK-AAK">
-                                <rect key="frame" x="24" y="724" width="366" height="46"/>
+                                <rect key="frame" x="24" y="511" width="327" height="64"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caveat" translatesAutoresizingMaskIntoConstraints="NO" id="t6U-da-b8A">
-                                        <rect key="frame" x="8" y="15" width="16" height="16"/>
+                                        <rect key="frame" x="8" y="24" width="16" height="16"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Do not share the particle with anyone, store it safely" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9U-Zc-SPy">
-                                        <rect key="frame" x="32" y="16" width="302" height="14"/>
+                                        <rect key="frame" x="32" y="16" width="263" height="32"/>
                                         <fontDescription key="fontDescription" name="OPPOSans-R" family="OPPOSans" pointSize="12"/>
                                         <color key="textColor" name="CommonGrayColor"/>
                                         <nil key="highlightedColor"/>
@@ -353,7 +324,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cE-yQ-th2" customClass="ZXNavigationBarNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YJJ-Sb-vke">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -365,16 +336,191 @@
             </objects>
             <point key="canvasLocation" x="-168.11594202898553" y="88.392857142857139"/>
         </scene>
+        <!--Mnemonic View Controller-->
+        <scene sceneID="9x0-6F-HYe">
+            <objects>
+                <viewController storyboardIdentifier="MnemonicViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="htW-6L-62R" customClass="MnemonicViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ZO-7O-nP6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification mnemonic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYr-Pn-Mga">
+                                <rect key="frame" x="24" y="8" width="327" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3sZ-h2-srC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on the words to put them together in the correct order." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVC-Pk-wEN">
+                                <rect key="frame" x="24" y="76" width="327" height="42.5"/>
+                                <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
+                                <color key="textColor" name="CommonGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ANN-q4-xxo">
+                                <rect key="frame" x="24" y="142.5" width="327" height="184"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="jjd-wp-oHY"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d3w-iN-2wT">
+                                    <size key="itemSize" width="70" height="32"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionViewCell" id="T9T-WT-pL5" customClass="MnemonicCollectionViewCell">
+                                        <rect key="frame" x="80" y="0.0" width="167" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KUd-GL-Nju">
+                                            <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mnemonic" translatesAutoresizingMaskIntoConstraints="NO" id="edY-Q4-mhy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mdnemonic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF2-4n-QDX">
+                                                    <rect key="frame" x="8" y="6.5" width="151" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="xTd-YO-Bud"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
+                                                    <color key="textColor" name="CommonGreenColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="edY-Q4-mhy" secondAttribute="bottom" id="09A-yk-yPt"/>
+                                                <constraint firstItem="YF2-4n-QDX" firstAttribute="top" secondItem="KUd-GL-Nju" secondAttribute="top" constant="6.5" id="1OC-hf-sEQ"/>
+                                                <constraint firstItem="YF2-4n-QDX" firstAttribute="leading" secondItem="KUd-GL-Nju" secondAttribute="leading" constant="8" id="9bM-cG-H1b"/>
+                                                <constraint firstAttribute="trailing" secondItem="YF2-4n-QDX" secondAttribute="trailing" constant="8" id="KnR-G9-iTY"/>
+                                                <constraint firstItem="edY-Q4-mhy" firstAttribute="top" secondItem="KUd-GL-Nju" secondAttribute="top" id="MUj-M3-DfT"/>
+                                                <constraint firstAttribute="trailing" secondItem="edY-Q4-mhy" secondAttribute="trailing" id="c6b-xv-fZZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="YF2-4n-QDX" secondAttribute="bottom" constant="6.5" id="eYw-uG-qxt"/>
+                                                <constraint firstItem="edY-Q4-mhy" firstAttribute="leading" secondItem="KUd-GL-Nju" secondAttribute="leading" id="gl3-pv-BrD"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="167" height="32"/>
+                                        <connections>
+                                            <outlet property="mnemonicLabel" destination="YF2-4n-QDX" id="u7R-x8-Ele"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="htW-6L-62R" id="k1o-YT-sqQ"/>
+                                    <outlet property="delegate" destination="htW-6L-62R" id="ZgO-8f-uez"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHK-6A-7Cf">
+                                <rect key="frame" x="24" y="591" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ydc-3t-LOQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OPPOSans-B" family="OPPOSans" pointSize="16"/>
+                                <state key="normal" title="Complete" backgroundImage="button">
+                                    <color key="titleColor" name="BackgroundColor"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonSelect"/>
+                                <connections>
+                                    <action selector="clickNextButton:" destination="pGz-EB-KE0" eventType="touchUpInside" id="iEp-1f-LKk"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mhh-yn-vkE">
+                                <rect key="frame" x="24" y="350.5" width="327" height="184"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="dPv-zs-v95"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2ba-B8-L9R">
+                                    <size key="itemSize" width="70" height="32"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionViewCell" id="j16-S3-uGj" customClass="MnemonicCollectionViewCell">
+                                        <rect key="frame" x="80" y="0.0" width="167" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bBN-0I-1tG">
+                                            <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mnemonic" translatesAutoresizingMaskIntoConstraints="NO" id="vqx-K3-U5y">
+                                                    <rect key="frame" x="0.0" y="0.0" width="167" height="32"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mdnemonic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrL-bX-sgW">
+                                                    <rect key="frame" x="8" y="6.5" width="151" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="kuW-8Q-EFV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
+                                                    <color key="textColor" name="CommonGreenColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vqx-K3-U5y" firstAttribute="leading" secondItem="bBN-0I-1tG" secondAttribute="leading" id="3xT-FP-D5I"/>
+                                                <constraint firstAttribute="trailing" secondItem="vqx-K3-U5y" secondAttribute="trailing" id="DeJ-Jk-bTG"/>
+                                                <constraint firstItem="PrL-bX-sgW" firstAttribute="top" secondItem="bBN-0I-1tG" secondAttribute="top" constant="6.5" id="eF8-ok-8hK"/>
+                                                <constraint firstItem="vqx-K3-U5y" firstAttribute="top" secondItem="bBN-0I-1tG" secondAttribute="top" id="hun-aA-hkh"/>
+                                                <constraint firstAttribute="bottom" secondItem="PrL-bX-sgW" secondAttribute="bottom" constant="6.5" id="lDx-j7-CxL"/>
+                                                <constraint firstAttribute="bottom" secondItem="vqx-K3-U5y" secondAttribute="bottom" id="opE-nr-V3V"/>
+                                                <constraint firstAttribute="trailing" secondItem="PrL-bX-sgW" secondAttribute="trailing" constant="8" id="vFu-xr-42V"/>
+                                                <constraint firstItem="PrL-bX-sgW" firstAttribute="leading" secondItem="bBN-0I-1tG" secondAttribute="leading" constant="8" id="vUD-mT-X7F"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="167" height="32"/>
+                                        <connections>
+                                            <outlet property="mnemonicLabel" destination="PrL-bX-sgW" id="qEc-Fo-QtR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="htW-6L-62R" id="UUr-0F-Yee"/>
+                                    <outlet property="delegate" destination="htW-6L-62R" id="JLN-OY-9r6"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5WJ-zF-UiL"/>
+                        <constraints>
+                            <constraint firstItem="5WJ-zF-UiL" firstAttribute="bottom" secondItem="SHK-6A-7Cf" secondAttribute="bottom" constant="28" id="1QX-ax-yao"/>
+                            <constraint firstItem="ANN-q4-xxo" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="2be-zy-kJK"/>
+                            <constraint firstItem="5WJ-zF-UiL" firstAttribute="trailing" secondItem="ANN-q4-xxo" secondAttribute="trailing" constant="24" id="2p4-xX-KHn"/>
+                            <constraint firstItem="5WJ-zF-UiL" firstAttribute="trailing" secondItem="PVC-Pk-wEN" secondAttribute="trailing" constant="24" id="5aO-1m-nUM"/>
+                            <constraint firstItem="mhh-yn-vkE" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="Dnu-mT-nEU"/>
+                            <constraint firstItem="EYr-Pn-Mga" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="HhU-if-FVd"/>
+                            <constraint firstItem="PVC-Pk-wEN" firstAttribute="top" secondItem="EYr-Pn-Mga" secondAttribute="bottom" constant="8" id="Kd8-cM-3rb"/>
+                            <constraint firstItem="5WJ-zF-UiL" firstAttribute="trailing" secondItem="mhh-yn-vkE" secondAttribute="trailing" constant="24" id="OVu-yE-UJz"/>
+                            <constraint firstItem="ANN-q4-xxo" firstAttribute="top" secondItem="PVC-Pk-wEN" secondAttribute="bottom" constant="24" id="Pm6-oM-MvG"/>
+                            <constraint firstItem="5WJ-zF-UiL" firstAttribute="trailing" secondItem="SHK-6A-7Cf" secondAttribute="trailing" constant="24" id="X4s-sT-iUg"/>
+                            <constraint firstItem="EYr-Pn-Mga" firstAttribute="top" secondItem="5WJ-zF-UiL" secondAttribute="top" constant="8" id="bCL-6C-lQr"/>
+                            <constraint firstItem="mhh-yn-vkE" firstAttribute="top" secondItem="ANN-q4-xxo" secondAttribute="bottom" constant="24" id="qL0-ev-C5p"/>
+                            <constraint firstItem="PVC-Pk-wEN" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="rRg-ed-J07"/>
+                            <constraint firstItem="5WJ-zF-UiL" firstAttribute="trailing" secondItem="EYr-Pn-Mga" secondAttribute="trailing" constant="24" id="s5e-Kc-xV7"/>
+                            <constraint firstItem="SHK-6A-7Cf" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="v7w-xi-SnO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mnemonicCollectionView" destination="ANN-q4-xxo" id="hki-NL-UEG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYi-DO-SJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="78"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Mnemonic" width="15.5" height="14.5"/>
-        <image name="Note" width="375" height="283"/>
         <image name="Selected" width="16" height="16"/>
         <image name="Wallet_Monochromatic" width="375" height="283"/>
         <image name="button" width="15.5" height="48"/>
         <image name="buttonSelect" width="15.5" height="48"/>
         <image name="caveat" width="16" height="16"/>
         <image name="deSelected" width="16" height="16"/>
+        <image name="note" width="375" height="283"/>
         <namedColor name="AlertBGColor">
             <color red="0.98000001907348633" green="0.67799997329711914" blue="0.078000001609325409" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

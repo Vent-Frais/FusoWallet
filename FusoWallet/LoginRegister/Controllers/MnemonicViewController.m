@@ -8,6 +8,7 @@
 #import "MnemonicViewController.h"
 #import "MnemonicCollectionViewCell.h"
 #import "MnemonicCollectionReusableView.h"
+#import "VerifyMnemonicTableViewController.h"
 
 @interface MnemonicViewController ()<UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *mnemonicCollectionView;
@@ -75,101 +76,42 @@
     return cell;
       
 }
-//组的头视图创建
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *collectionFootIdentifer = @"MnemonicCollectionReusableView";
-    
-    if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
-        
-            MnemonicCollectionReusableView *footView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:collectionFootIdentifer forIndexPath:indexPath];
-           
-            return footView;
-        
-
-    }else{
-       return (UICollectionReusableView *)[NSNull null];
-    }
-
-
-
-}
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
-   
-        return CGSizeMake(Screen_Width, 80);
-
-}
-//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-//    NSMutableDictionary *dic = _filteArray[indexPath.section];
-//    NSMutableArray *ary = dic[@"data"];
+////组的头视图创建
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *collectionFootIdentifer = @"MnemonicCollectionReusableView";
 //
-//    for (int i = 0; i < ary.count; i ++) {
-//        NSMutableDictionary *strDic = ary[i];
-//        if (i == indexPath.row) {
-//            strDic[@"select"] = @(1);
-//        }else{
-//            strDic[@"select"] = @(0);
-//        }
+//    if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
+//
+//            MnemonicCollectionReusableView *footView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:collectionFootIdentifer forIndexPath:indexPath];
+//
+//            return footView;
+//
+//
+//    }else{
+//       return (UICollectionReusableView *)[NSNull null];
 //    }
 //
-//    switch (indexPath.section) {
-//        case 0:{
-//            NSMutableDictionary *modelDic = ary[indexPath.row];
-//            _currencyNumber = [modelDic[@"currencyNumber"]integerValue];
-//            _quoteName = modelDic[@"type"];
-//        }
 //
-//            break;
-//        case 1:{
-//            switch (indexPath.row) {
-//                case 0:
-//                    _directionNumber = 0;
-//                    break;
-//                case 1:
-//                    _directionNumber = 2;
-//                    break;
-//                case 2:
-//                    _directionNumber = 1;
-//                break;
 //
-//                default:
-//                    break;
-//            }
-//        }
-//
-//            break;
-//        case 2:{
-//            switch (indexPath.row) {
-//                case 0:
-//                    _statusNumber = 0;
-//                    break;
-//                case 1:
-//                    _statusNumber = 1;
-//                    break;
-//                case 2:
-//                    _statusNumber = 2;
-//                break;
-//
-//                default:
-//                    break;
-//            }
-//        }
-//
-//            break;
-//
-//        default:
-//            break;
-//    }
-//    [collectionView reloadData];
 //}
-/*
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
+//
+//        return CGSizeMake(Screen_Width, 80);
+//
+//}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    VerifyMnemonicTableViewController *verifyVC = segue.destinationViewController;
+    verifyVC.mnemonicArray = _mnemonicArray;
+    
 }
-*/
+
 
 @end

