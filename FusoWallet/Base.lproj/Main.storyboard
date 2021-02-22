@@ -259,6 +259,7 @@
                                 <state key="selected" backgroundImage="buttonSelect"/>
                                 <connections>
                                     <action selector="clickNextButton:" destination="pGz-EB-KE0" eventType="touchUpInside" id="9Hf-9W-9YT"/>
+                                    <segue destination="htW-6L-62R" kind="show" id="U49-Qi-XEI"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-hK-AAK">
@@ -336,12 +337,12 @@
             </objects>
             <point key="canvasLocation" x="-168.11594202898553" y="88.392857142857139"/>
         </scene>
-        <!--Mnemonic View Controller-->
+        <!--Verify Mnemonic View Controller-->
         <scene sceneID="9x0-6F-HYe">
             <objects>
-                <viewController storyboardIdentifier="MnemonicViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="htW-6L-62R" customClass="MnemonicViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerifyMnemonicViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="htW-6L-62R" customClass="VerifyMnemonicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZO-7O-nP6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification mnemonic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYr-Pn-Mga">
@@ -372,7 +373,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionViewCell" id="T9T-WT-pL5" customClass="MnemonicCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VerifyMnemonicCollectionViewCell" id="T9T-WT-pL5" customClass="MnemonicCollectionViewCell">
                                         <rect key="frame" x="80" y="0.0" width="167" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KUd-GL-Nju">
@@ -410,12 +411,12 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="htW-6L-62R" id="k1o-YT-sqQ"/>
-                                    <outlet property="delegate" destination="htW-6L-62R" id="ZgO-8f-uez"/>
+                                    <outlet property="dataSource" destination="htW-6L-62R" id="hNV-AC-rgH"/>
+                                    <outlet property="delegate" destination="htW-6L-62R" id="lug-w1-YD9"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHK-6A-7Cf">
-                                <rect key="frame" x="24" y="591" width="327" height="48"/>
+                                <rect key="frame" x="24" y="571" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ydc-3t-LOQ"/>
                                 </constraints>
@@ -441,7 +442,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MnemonicCollectionViewCell" id="j16-S3-uGj" customClass="MnemonicCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DisorderMnemonicCollectionViewCell" id="j16-S3-uGj" customClass="MnemonicCollectionViewCell">
                                         <rect key="frame" x="80" y="0.0" width="167" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bBN-0I-1tG">
@@ -479,7 +480,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="htW-6L-62R" id="UUr-0F-Yee"/>
+                                    <outlet property="dataSource" destination="htW-6L-62R" id="VY0-KF-xo0"/>
                                     <outlet property="delegate" destination="htW-6L-62R" id="JLN-OY-9r6"/>
                                 </connections>
                             </collectionView>
@@ -503,8 +504,10 @@
                             <constraint firstItem="SHK-6A-7Cf" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="v7w-xi-SnO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="urd-JI-UGw"/>
                     <connections>
-                        <outlet property="mnemonicCollectionView" destination="ANN-q4-xxo" id="hki-NL-UEG"/>
+                        <outlet property="disorderMnemonicCollectionView" destination="mhh-yn-vkE" id="YiB-oL-UW7"/>
+                        <outlet property="verifyMnemonicCollectionView" destination="ANN-q4-xxo" id="dRf-xU-KZs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYi-DO-SJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

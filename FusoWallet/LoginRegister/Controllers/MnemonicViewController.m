@@ -8,7 +8,7 @@
 #import "MnemonicViewController.h"
 #import "MnemonicCollectionViewCell.h"
 #import "MnemonicCollectionReusableView.h"
-#import "VerifyMnemonicTableViewController.h"
+#import "VerifyMnemonicViewController.h"
 
 @interface MnemonicViewController ()<UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *mnemonicCollectionView;
@@ -108,7 +108,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    VerifyMnemonicTableViewController *verifyVC = segue.destinationViewController;
+    VerifyMnemonicViewController *verifyVC = segue.destinationViewController;
     verifyVC.mnemonicArray = _mnemonicArray;
     
 }
