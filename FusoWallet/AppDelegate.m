@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UserInfoModel.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    NSArray *userArray = [RpcRequest getTheObjectForKey:USERACCOUNT];
+    for (int i = 0; i < userArray.count; i ++) {
+        NSString *mnemonic = userArray[i];
+        NSString *fileName = [NSString stringWithFormat:@"%@.plist",FilePathWithName(mnemonic)];
+        UserInfoModel *model = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
+        NSLog(@"%@",model.mnemonics);
+    }
+    
+    
     return YES;
 }
 

@@ -5,8 +5,8 @@
 //  Created by Developer on 2021/2/22.
 //
 
-#import "MnemonicModel.h"
+#import "UserInfoModel.h"
 
-@implementation MnemonicModel
-
+@implementation UserInfoModel
+MJCodingImplementation
 @end

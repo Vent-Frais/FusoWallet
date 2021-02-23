@@ -9,6 +9,7 @@
 #import "MnemonicCollectionViewCell.h"
 #import "MnemonicCollectionReusableView.h"
 #import "VerifyMnemonicViewController.h"
+#import "JYEqualCellSpaceFlowLayout.h"
 
 @interface MnemonicViewController ()<UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *mnemonicCollectionView;
@@ -29,19 +30,28 @@
     [self initCollectionView];
 }
 - (void)initCollectionView{
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    JYEqualCellSpaceFlowLayout *flowLayout = [[JYEqualCellSpaceFlowLayout alloc]initWithType:AlignWithCenter betweenOfCell:8.0];
    
         // 设置每个item的大小，
     flowLayout.estimatedItemSize = CGSizeMake(70, 32);
-           //    flowLayout.itemSize = CGSizeMake(CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
-           // 设置列的最小间距
-           flowLayout.minimumInteritemSpacing = 8;
-           // 设置最小行间距
-           flowLayout.minimumLineSpacing = 16;
-           // 设置布局的内边距
-           flowLayout.sectionInset = UIEdgeInsetsMake(4, 8, 4, 8);
-           // 滚动方向
-           flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+  
+    //    flowLayout.itemSize = CGSizeMake(CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+ 
+    // 设置列的最小间距
+ 
+    flowLayout.minimumInteritemSpacing = 8;
+ 
+    // 设置最小行间距
+ 
+    flowLayout.minimumLineSpacing = 16;
+  
+    // 设置布局的内边距
+ 
+    flowLayout.sectionInset = UIEdgeInsetsMake(4, 8, 4, 8);
+ 
+    // 滚动方向
+ 
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
    
     _mnemonicCollectionView.collectionViewLayout = flowLayout;
     
