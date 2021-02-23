@@ -1,40 +1,35 @@
 //
-//  BaseNavTableViewController.m
+//  MineTableViewController.m
 //  FusoWallet
 //
-//  Created by Developer on 2021/2/20.
+//  Created by Developer on 2021/2/23.
 //
 
-#import "BaseNavTableViewController.h"
+#import "MineTableViewController.h"
 
-@interface BaseNavTableViewController ()
+@interface MineTableViewController ()
 
 @end
 
-@implementation BaseNavTableViewController
+@implementation MineTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.zx_navStatusBarStyle = ZXNavStatusBarStyleLight;
-    self.zx_backBtnImageName = @"back";
-    self.zx_navBarBackgroundColor = [UIColor colorNamed:@"BackgroundColor"];
-    self.zx_navLineViewBackgroundColor = [UIColor clearColor];
-    self.tableView.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
-    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    self.zx_hideBaseNavBar = YES;
 }
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Incomplete implementation, return the number of sections
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-//    return 0;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of rows
+    return 0;
+}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

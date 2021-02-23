@@ -28,6 +28,8 @@
 #import "BaseNavTableViewController.h"
 #import "RpcRequest.h"
 #import "CALayer+boardColor.h"
+#import "UserInfoModel.h"
+#import "DefaultSelectBackgroundViewTableViewCell.h"
 
 #ifndef dispatch_main_async_safe
 #define dispatch_main_async_safe(block)\

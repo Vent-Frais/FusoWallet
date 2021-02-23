@@ -26,7 +26,14 @@
         UserInfoModel *model = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
         NSLog(@"%@",model.mnemonics);
     }
-    
+//    [UINavigationController zx_hideAllNavBar];
+//
+//        UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//        DemoListViewController *vc = [[DemoListViewController alloc]init];
+//        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+//        window.rootViewController = nav;
+//        [window makeKeyAndVisible];
+//        self.window = window;
     
     return YES;
 }

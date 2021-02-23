@@ -8,7 +8,6 @@
 #import "VerifyMnemonicViewController.h"
 #import "MnemonicCollectionViewCell.h"
 #import "JYEqualCellSpaceFlowLayout.h"
-#import "UserInfoModel.h"
 
 @interface VerifyMnemonicViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *verifyMnemonicCollectionView;

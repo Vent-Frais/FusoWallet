@@ -21,6 +21,7 @@
     self.zx_navBarBackgroundColor = [UIColor colorNamed:@"BackgroundColor"];
     self.zx_navLineViewBackgroundColor = [UIColor clearColor];
     self.view.backgroundColor = [UIColor colorNamed:@"BackgroundColor"];
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
 }
 
 /*
