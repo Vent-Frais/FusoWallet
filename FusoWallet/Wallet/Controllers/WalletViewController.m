@@ -7,6 +7,7 @@
 
 #import "WalletViewController.h"
 #import "WalletTableViewCell.h"
+#import "CoinDetailViewController.h"
 
 @interface WalletViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -52,6 +53,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"CoinDetailViewController"] animated:YES];
+}
 /*
 #pragma mark - Navigation
 

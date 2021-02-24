@@ -30,6 +30,9 @@
 #import "CALayer+boardColor.h"
 #import "UserInfoModel.h"
 #import "DefaultSelectBackgroundViewTableViewCell.h"
+#import "UIView+Extension.h"
+#import "UITextField+PlaceHolder.h"
+#import <ISMessages/ISMessages.h>
 
 #ifndef dispatch_main_async_safe
 #define dispatch_main_async_safe(block)\
