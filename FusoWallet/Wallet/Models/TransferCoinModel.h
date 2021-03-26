@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TransferCoinModel : NSObject
 @property (nonatomic, assign) long long dateTime;
 @property (nonatomic, strong) NSString *direction;
-@property (nonatomic, strong) NSString *coinNumber;
+@property (nonatomic, strong) NSString *coinAmount;
 
 @end
 

@@ -9,4 +9,6 @@
 
 @implementation UserInfoModel
 MJCodingImplementation
+
 @end
+

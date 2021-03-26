@@ -6,11 +6,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NavView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseNavTableViewController : ZXNavigationBarTableViewController
-
+@property (nonatomic, strong) NavView *navView;
+- (void)customNav;
+- (void)removeCustomNav;
+- (void)setStatusBarBackgroundColor:(UIColor *)color;
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view;
 @end
 
 NS_ASSUME_NONNULL_END

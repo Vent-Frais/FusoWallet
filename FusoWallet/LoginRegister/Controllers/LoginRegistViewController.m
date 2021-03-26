@@ -6,6 +6,7 @@
 //
 
 #import "LoginRegistViewController.h"
+#import "ImportAccountViewController.h"
 
 @interface LoginRegistViewController ()
 
@@ -17,6 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.zx_hideBaseNavBar = YES;
+}
+- (IBAction)clickAddWallet:(UIButton *)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Mine" bundle:nil];
+    ImportAccountViewController *importVC = [storyboard instantiateViewControllerWithIdentifier:@"ImportAccountViewController"];
+    [self.navigationController pushViewController:importVC animated:YES];
 }
 
 /*

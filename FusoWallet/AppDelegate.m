@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "UserInfoModel.h"
+#import "LoginRegistViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,26 +20,26 @@
     // Override point for customization after application launch.
 //    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
-    NSArray *userArray = [RpcRequest getTheObjectForKey:USERACCOUNT];
-    for (int i = 0; i < userArray.count; i ++) {
-        NSString *mnemonic = userArray[i];
-        NSString *fileName = [NSString stringWithFormat:@"%@.plist",FilePathWithName(mnemonic)];
-        UserInfoModel *model = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
-        NSLog(@"%@",model.mnemonics);
-    }
-//    [UINavigationController zx_hideAllNavBar];
-//
-//        UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//        DemoListViewController *vc = [[DemoListViewController alloc]init];
-//        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
-//        window.rootViewController = nav;
-//        [window makeKeyAndVisible];
-//        self.window = window;
+    NSString *address = [RpcRequest getTheObjectForKey:Current_user_adress];
+    if (address.length == 0) [self setRootVCToLoginRegist];
     
     return YES;
 }
+- (void)setRootVCToWallet{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UITabBarController *rootTBC = [storyboard instantiateViewControllerWithIdentifier:@"RootTBC"];
+    self.window.rootViewController = rootTBC;
+    [self.window makeKeyAndVisible];
 
-
+}
+- (void)setRootVCToLoginRegist{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ZXNavigationBarController *rootVC= [storyboard instantiateViewControllerWithIdentifier:@"loginRegistSBID"];
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
+}
 //#pragma mark - UISceneSession lifecycle
 //
 //

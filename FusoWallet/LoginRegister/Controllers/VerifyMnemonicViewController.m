@@ -15,7 +15,9 @@
 @property (strong, nonatomic) NSMutableArray *verifyMnemonicArray;
 @property (strong, nonatomic) NSMutableArray *disorderMnemonicArray;
 @property (weak, nonatomic) IBOutlet UIButton *completeButton;
-@property (weak, nonatomic) IBOutlet UILabel *perfectLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) NSMutableArray *tempArray;
 @end
 
 @implementation VerifyMnemonicViewController
@@ -25,6 +27,10 @@
     // Do any additional setup after loading the view.
     _verifyMnemonicArray = @[].mutableCopy;
     _disorderMnemonicArray = @[].mutableCopy;
+    NSString *title = _isBackup ? @"Confirmed backup" : @"Verification mnemonic";
+    NSString *detail = _isBackup ? @"Click on the words to put them together in the correct order." : @"Click on the words to put them together in the correct order.";
+    _titleLabel.text = title;
+    _detailLabel.text = detail;
     
     [self initCollectionView];
 }
@@ -123,12 +129,26 @@
     [_disorderMnemonicCollectionView reloadData];
     if (_verifyMnemonicArray.count == 12) {
         
-        _completeButton.selected = [self comparisonMnemonic];
-        _perfectLabel.hidden = !_completeButton.selected;
+        BOOL state = [self comparisonMnemonic];
+        _completeButton.selected = state;
+        if (state) {
+            [ISMessages showCardAlertWithTitle:NSLocalizedString(@"Mnemonic is correct", nil)
+                        message:nil
+                        duration:1.2f
+                        hideOnSwipe:YES
+                        hideOnTap:YES
+                        alertType:ISAlertTypeSuccess
+                        alertPosition:ISAlertPositionTop
+                        didHide:^(BOOL finished) {
+                           NSLog(@"Alert did hide.");
+                
+            }];
+        }
+        
     }else{
         
         _completeButton.selected = NO;
-        _perfectLabel.hidden = YES;
+        
     }
 }
 - (BOOL)comparisonMnemonic{
@@ -144,32 +164,38 @@
 - (IBAction)clickCompleteButton:(UIButton *)sender {
     NSString *mnemonic = [_mnemonicArray componentsJoinedByString:@" "];
     NSLog(@"%@",mnemonic);
-    NSArray *userArray = [RpcRequest getTheObjectForKey:USERACCOUNT];
-    NSDictionary *dic = [[RpcRequest shared]fromMnemonicGetInfo:mnemonic passphrase:@""];
-    UserInfoModel *model = [UserInfoModel mj_objectWithKeyValues:dic];
-    if (!userArray) {
+    _tempArray = [NSKeyedUnarchiver unarchiveObjectWithFile:FilePathWithName(USERACCOUNT)];
+    NSDictionary *dic = [[RpcRequest shared] fromMnemonicGetInfo:mnemonic passphrase:@""];
+    UserInfoModel *tempModel = [UserInfoModel mj_objectWithKeyValues:dic];
+    tempModel.walletName = _walletName;
+    tempModel.passphrase = _passphrase;
 
-        NSString *fileName = [NSString stringWithFormat:@"%@.plist",model.address];
-        if ([NSKeyedArchiver archiveRootObject:model toFile:FilePathWithName(fileName)]) {
-            userArray = [NSArray arrayWithObject:model.address];
-            [RpcRequest saveObjectForUser:userArray key:USERACCOUNT];
-        }else{
-            NSLog(@"存储错误");
-        }
+    if (!_tempArray) {
+        _tempArray = @[tempModel].mutableCopy;
+
+        [self saveAndJump:tempModel];
         
     }else{
-
-        if (![userArray containsObject:model.address]) {
-            NSMutableArray *array = [NSMutableArray arrayWithArray:userArray];
-            [array addObject:model.address];
-            NSString *fileName = [NSString stringWithFormat:@"%@.plist",model.address];
-            if([NSKeyedArchiver archiveRootObject:model toFile:FilePathWithName(fileName)]){
-              [RpcRequest saveObjectForUser:array.copy key:USERACCOUNT];
+        for (UserInfoModel *model in _tempArray) {
+            if ([tempModel.address isEqualToString:model.address]) {
+                [RpcRequest showMesage:@"该钱包已存在"];
+                return;
             }
-            
         }
         
-       
+        [_tempArray addObject:tempModel];
+        
+        [self saveAndJump:tempModel];
+    }
+}
+
+- (void)saveAndJump:(UserInfoModel *)model{
+    if ([NSKeyedArchiver archiveRootObject:_tempArray toFile:FilePathWithName(USERACCOUNT)]) {
+        [RpcRequest saveObjectForUser:model.address key:Current_user_adress];
+        AppDelegate *dele = KAppDelegate;
+        [dele setRootVCToWallet];
+    }else{
+        NSLog(@"失败");
     }
 }
 /*

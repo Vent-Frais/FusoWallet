@@ -1,0 +1,6 @@
+framework module ScaleCodec {
+  umbrella header "ScaleCodec-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -17,7 +17,7 @@
     _model = model;
     _timeLabel.text = [RpcRequest timeIntervalToTimeString:_model.dateTime customDateFormat:nil];
     _directionLabel.text = _model.direction;
-    _numberLabel.text = _model.coinNumber;
+    _numberLabel.text = _model.coinAmount;
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

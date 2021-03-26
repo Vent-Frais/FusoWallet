@@ -17,8 +17,8 @@
     _model = model;
     _coinNameLabel.text = _model.coinName;
     _coinImageView.image = [UIImage imageNamed:_model.coinName];
-    _coinNumberLabel.text = _model.coinNumber;
-    _coinMoneyNumberLabel.text = _model.coinMoneyNumber;
+    _coinNumberLabel.text = _model.coinAmount;
+    _coinMoneyNumberLabel.text = _model.coinMoneyAmount;
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

@@ -9,5 +9,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow * window;
+- (void)setRootVCToWallet;
+- (void)setRootVCToLoginRegist;
 @end
 

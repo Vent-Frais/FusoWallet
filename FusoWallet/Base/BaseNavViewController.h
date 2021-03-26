@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseNavViewController : ZXNavigationBarController
-
+- (void)setStatusBarBackgroundColor:(nullable UIColor *)color;
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view;
 @end
 
 NS_ASSUME_NONNULL_END

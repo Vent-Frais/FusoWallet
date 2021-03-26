@@ -51,7 +51,7 @@
                                     <color key="titleColor" name="CommonGrayColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="F0h-SH-X1B" kind="show" id="Pyx-dd-uJS"/>
+                                    <action selector="clickAddWallet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSP-hE-pQJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-zC-uAP">
@@ -61,7 +61,7 @@
                                     <color key="titleColor" name="BackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pGz-EB-KE0" kind="show" id="plU-La-Cvr"/>
+                                    <segue destination="81I-94-MOt" kind="push" id="8Bf-oA-yS6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,19 +95,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please back up your wallet immediately!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-bW-aSG">
-                                <rect key="frame" x="24" y="52" width="327" height="56"/>
+                                <rect key="frame" x="24" y="8" width="327" height="56"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the next step, you will see 12 words that allow you to restore your wallet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M94-Mh-lay">
-                                <rect key="frame" x="24" y="116" width="327" height="37.5"/>
+                                <rect key="frame" x="24" y="72" width="327" height="37.5"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
                                 <color key="textColor" name="CommonGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-gD-5YT">
-                                <rect key="frame" x="0.0" y="169.5" width="375" height="283"/>
+                                <rect key="frame" x="0.0" y="125.5" width="375" height="283"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TRb-gD-5YT" secondAttribute="height" multiplier="375:283" id="DwC-ko-h5w"/>
                                 </constraints>
@@ -169,12 +169,15 @@
                     <navigationItem key="navigationItem" id="JE1-Yk-6ns"/>
                     <connections>
                         <outlet property="agreeButton" destination="vlb-nh-72g" id="BHo-5P-2S9"/>
+                        <outlet property="detailLabel" destination="M94-Mh-lay" id="MQr-I1-w55"/>
                         <outlet property="nextButton" destination="mcQ-SH-dVk" id="4of-VJ-fPx"/>
+                        <outlet property="noticLabel" destination="eYC-Hw-BCX" id="zef-SG-1O1"/>
+                        <outlet property="titleLabel" destination="2C3-bW-aSG" id="0en-Ou-4hb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Cy-op-G8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="-300"/>
+            <point key="canvasLocation" x="3340" y="-286"/>
         </scene>
         <!--Mnemonic View Controller-->
         <scene sceneID="vN9-83-S67">
@@ -263,7 +266,7 @@
                                 <state key="selected" backgroundImage="buttonSelect"/>
                                 <connections>
                                     <action selector="clickNextButton:" destination="pGz-EB-KE0" eventType="touchUpInside" id="9Hf-9W-9YT"/>
-                                    <segue destination="htW-6L-62R" kind="show" id="U49-Qi-XEI"/>
+                                    <segue destination="htW-6L-62R" kind="show" identifier="VerifyMnemonicViewController" id="U49-Qi-XEI"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-hK-AAK">
@@ -316,17 +319,19 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detailLabel" destination="LGG-pW-gI4" id="Bt6-zE-kuA"/>
                         <outlet property="mnemonicCollectionView" destination="Nvz-UO-5VC" id="jVZ-ah-svA"/>
+                        <outlet property="titleLabel" destination="WkT-mg-abJ" id="cbb-RG-8Ug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5F-KO-gp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2599" y="-310"/>
+            <point key="canvasLocation" x="4257" y="-296"/>
         </scene>
         <!--Navigation Bar Navigation Controller-->
         <scene sceneID="qOY-U5-vzO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cE-yQ-th2" customClass="ZXNavigationBarNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginRegistSBID" automaticallyAdjustsScrollViewInsets="NO" id="7cE-yQ-th2" customClass="ZXNavigationBarNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YJJ-Sb-vke">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -486,12 +491,6 @@
                                     <action selector="clickCompleteButton:" destination="htW-6L-62R" eventType="touchUpInside" id="ekG-F1-mxM"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfect!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sp-4U-brT">
-                                <rect key="frame" x="163.5" y="325.5" width="48.5" height="16.5"/>
-                                <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5WJ-zF-UiL"/>
                         <constraints>
@@ -510,21 +509,20 @@
                             <constraint firstItem="PVC-Pk-wEN" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="rRg-ed-J07"/>
                             <constraint firstItem="5WJ-zF-UiL" firstAttribute="trailing" secondItem="EYr-Pn-Mga" secondAttribute="trailing" constant="24" id="s5e-Kc-xV7"/>
                             <constraint firstItem="SHK-6A-7Cf" firstAttribute="leading" secondItem="5WJ-zF-UiL" secondAttribute="leading" constant="24" id="v7w-xi-SnO"/>
-                            <constraint firstItem="9Sp-4U-brT" firstAttribute="top" secondItem="ANN-q4-xxo" secondAttribute="bottom" constant="20" id="xHN-wu-MJV"/>
-                            <constraint firstItem="9Sp-4U-brT" firstAttribute="centerX" secondItem="6ZO-7O-nP6" secondAttribute="centerX" id="zHk-mW-6RT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="urd-JI-UGw"/>
                     <connections>
                         <outlet property="completeButton" destination="SHK-6A-7Cf" id="yz2-Ld-tLh"/>
+                        <outlet property="detailLabel" destination="PVC-Pk-wEN" id="nUw-vA-vNN"/>
                         <outlet property="disorderMnemonicCollectionView" destination="mhh-yn-vkE" id="YiB-oL-UW7"/>
-                        <outlet property="perfectLabel" destination="9Sp-4U-brT" id="YH0-Mb-Mbl"/>
+                        <outlet property="titleLabel" destination="EYr-Pn-Mga" id="a5F-lF-eRp"/>
                         <outlet property="verifyMnemonicCollectionView" destination="ANN-q4-xxo" id="dRf-xU-KZs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYi-DO-SJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="-311"/>
+            <point key="canvasLocation" x="5039" y="-297"/>
         </scene>
         <!--Restore Identity View Controller-->
         <scene sceneID="9K3-ca-i2M">
@@ -535,19 +533,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restore identity" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-OQ-5kP">
-                                <rect key="frame" x="24" y="52" width="327" height="37.5"/>
+                                <rect key="frame" x="24" y="8" width="327" height="37.5"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will have a multi-chain wallet under your identity, such as BTC, ETH..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19L-s4-1ej">
-                                <rect key="frame" x="24" y="97.5" width="327" height="37.5"/>
+                                <rect key="frame" x="24" y="53.5" width="327" height="37.5"/>
                                 <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
                                 <color key="textColor" name="CommonGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdj-Yl-9ye">
-                                <rect key="frame" x="24" y="167" width="327" height="128"/>
+                                <rect key="frame" x="24" y="123" width="327" height="128"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="cbt-Kd-AYC"/>
@@ -579,7 +577,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Eh-76-PkF" customClass="IQTextView">
-                                <rect key="frame" x="44" y="183" width="287" height="88"/>
+                                <rect key="frame" x="44" y="139" width="287" height="88"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="1Re-vl-dFV"/>
@@ -628,7 +626,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="gv0-av-7HK">
             <objects>
-                <tabBarController id="biS-T5-ftv" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTBC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="biS-T5-ftv" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="aGy-Dd-m0C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -688,10 +686,10 @@
             </objects>
             <point key="canvasLocation" x="889" y="1617"/>
         </scene>
-        <!--MineTableViewController-->
+        <!--Mine-->
         <scene sceneID="Jkg-hy-j0k">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MineTableViewController" storyboardName="Mine" referencedIdentifier="MineTableViewController" id="9jz-Cc-bgP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="MineTableViewController" storyboardName="Mine" id="9jz-Cc-bgP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="WNd-7m-I6W"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEp-8R-mgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -708,8 +706,376 @@
             </objects>
             <point key="canvasLocation" x="1822" y="1617"/>
         </scene>
+        <!--Add Wallet Table View Controller-->
+        <scene sceneID="ac4-x2-Nba">
+            <objects>
+                <tableViewController storyboardIdentifier="AddWalletTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="81I-94-MOt" customClass="AddWalletTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wXy-wo-YY3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="LTA-bL-kKP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add wallet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjC-x9-1t3">
+                                    <rect key="frame" x="24" y="13.5" width="327" height="37.5"/>
+                                    <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="32"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="BackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="NhX-pV-ZtS"/>
+                                <constraint firstAttribute="trailing" secondItem="pjC-x9-1t3" secondAttribute="trailing" constant="24" id="Tr8-cq-qi7"/>
+                                <constraint firstItem="pjC-x9-1t3" firstAttribute="leading" secondItem="LTA-bL-kKP" secondAttribute="leading" constant="24" id="gpB-Fb-IQP"/>
+                                <constraint firstAttribute="bottom" secondItem="pjC-x9-1t3" secondAttribute="bottom" constant="20" id="q4C-ho-pqb"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection id="bWx-sN-gxm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="66" id="rKV-af-c3S" customClass="DefaultSelectBackgroundViewTableViewCell">
+                                        <rect key="frame" x="0.0" y="99" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rKV-af-c3S" id="tl1-ai-x8R">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3se-jU-U8Q">
+                                                    <rect key="frame" x="335" y="25" width="16" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="bfC-WX-ZIk"/>
+                                                        <constraint firstAttribute="height" constant="16" id="krB-cs-roc"/>
+                                                    </constraints>
+                                                    <state key="normal" image="disclosureIndicator"/>
+                                                    <connections>
+                                                        <action selector="clickDetailButton:" destination="rKV-af-c3S" eventType="touchUpInside" id="MFT-0y-Nae"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fusotao" translatesAutoresizingMaskIntoConstraints="NO" id="1Tk-Ic-NtV">
+                                                    <rect key="frame" x="24" y="13" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="9O2-R4-dcI"/>
+                                                        <constraint firstAttribute="width" constant="40" id="cbf-C1-dBS"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fusotao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pno-cP-2fh">
+                                                    <rect key="frame" x="80" y="23.5" width="58.5" height="19"/>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="1Tk-Ic-NtV" firstAttribute="leading" secondItem="tl1-ai-x8R" secondAttribute="leading" constant="24" id="Ild-EP-0jy"/>
+                                                <constraint firstItem="Pno-cP-2fh" firstAttribute="centerY" secondItem="tl1-ai-x8R" secondAttribute="centerY" id="PUe-Nf-IJa"/>
+                                                <constraint firstAttribute="trailing" secondItem="3se-jU-U8Q" secondAttribute="trailing" constant="24" id="fHP-Ib-6iM"/>
+                                                <constraint firstItem="3se-jU-U8Q" firstAttribute="centerY" secondItem="Pno-cP-2fh" secondAttribute="centerY" id="miH-E5-rlN"/>
+                                                <constraint firstItem="1Tk-Ic-NtV" firstAttribute="centerY" secondItem="tl1-ai-x8R" secondAttribute="centerY" id="sQl-83-pn7"/>
+                                                <constraint firstItem="Pno-cP-2fh" firstAttribute="leading" secondItem="1Tk-Ic-NtV" secondAttribute="trailing" constant="16" id="sYz-Hw-Jju"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FAR-Ul-UZp" kind="push" id="b6o-S2-jFt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="81I-94-MOt" id="EmN-OW-Gni"/>
+                            <outlet property="delegate" destination="81I-94-MOt" id="dkN-xX-v0q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="b9Q-O0-jq2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0A-OY-s42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681" y="-297"/>
+        </scene>
+        <!--Creat Wallet Table View Controller-->
+        <scene sceneID="ud9-Tw-vUk">
+            <objects>
+                <tableViewController storyboardIdentifier="CreatWalletTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FAR-Ul-UZp" customClass="CreatWalletTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e1r-re-z27">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="tqE-Wu-Xfn">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create wallet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EF7-hl-IiE">
+                                    <rect key="frame" x="24" y="13.5" width="327" height="37.5"/>
+                                    <fontDescription key="fontDescription" name="OPPOSans-H" family="OPPOSans" pointSize="32"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="BackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="EF7-hl-IiE" secondAttribute="bottom" constant="20" id="Oy0-vw-yek"/>
+                                <constraint firstAttribute="height" constant="75" id="Uif-KQ-Uxh"/>
+                                <constraint firstAttribute="trailing" secondItem="EF7-hl-IiE" secondAttribute="trailing" constant="24" id="nXi-iV-fUy"/>
+                                <constraint firstItem="EF7-hl-IiE" firstAttribute="leading" secondItem="tqE-Wu-Xfn" secondAttribute="leading" constant="24" id="r7u-KH-lOt"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection id="ITT-Oj-s6z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="6lv-JM-IUu" customClass="DefaultSelectBackgroundViewTableViewCell">
+                                        <rect key="frame" x="0.0" y="99" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6lv-JM-IUu" id="WHb-eN-5KH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCn-R9-zvB" customClass="InputChangeBorderColorView">
+                                                    <rect key="frame" x="24" y="12" width="327" height="56"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Fusotao-1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yGS-1a-wDY" customClass="IQTextView">
+                                                            <rect key="frame" x="20" y="12" width="287" height="40"/>
+                                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="12"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                                    <color key="value" name="CommonGrayColor"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Please select coin"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="FAR-Ul-UZp" id="RI0-Ob-fmI"/>
+                                                            </connections>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="4H7-dm-uRc"/>
+                                                        <constraint firstItem="yGS-1a-wDY" firstAttribute="top" secondItem="sCn-R9-zvB" secondAttribute="top" constant="12" id="Kjw-dN-dWu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yGS-1a-wDY" secondAttribute="trailing" constant="20" id="LeN-fr-H08"/>
+                                                        <constraint firstItem="yGS-1a-wDY" firstAttribute="leading" secondItem="sCn-R9-zvB" secondAttribute="leading" constant="20" id="M6w-aT-M2h"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yGS-1a-wDY" secondAttribute="bottom" constant="4" id="UYy-Uh-XTa"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.boardUIColor">
+                                                            <color key="value" name="CommonGreenColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-8e-nLR">
+                                                    <rect key="frame" x="44" y="4" width="90" height="14"/>
+                                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="bJr-My-1NE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-R" family="OPPOSans" pointSize="12"/>
+                                                    <color key="textColor" name="CommonGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sCn-R9-zvB" secondAttribute="bottom" constant="1" id="8tu-GZ-3rU"/>
+                                                <constraint firstItem="2QO-8e-nLR" firstAttribute="top" secondItem="WHb-eN-5KH" secondAttribute="top" constant="4" id="Lqk-pf-ppw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sCn-R9-zvB" secondAttribute="trailing" constant="8" id="VA5-63-9fM"/>
+                                                <constraint firstItem="2QO-8e-nLR" firstAttribute="leading" secondItem="WHb-eN-5KH" secondAttribute="leading" constant="44" id="d7B-FI-vYN"/>
+                                                <constraint firstItem="sCn-R9-zvB" firstAttribute="leading" secondItem="WHb-eN-5KH" secondAttribute="leadingMargin" constant="8" id="fb4-be-FTs"/>
+                                                <constraint firstItem="sCn-R9-zvB" firstAttribute="top" secondItem="WHb-eN-5KH" secondAttribute="topMargin" constant="1" id="ojR-aF-Xc8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="wbR-10-sgG" customClass="DefaultSelectBackgroundViewTableViewCell">
+                                        <rect key="frame" x="0.0" y="179" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbR-10-sgG" id="d48-sl-diu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VV6-1x-cgc" customClass="InputChangeBorderColorView">
+                                                    <rect key="frame" x="24" y="12" width="327" height="56"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XYU-bh-TCR" customClass="IQTextView">
+                                                            <rect key="frame" x="20" y="12" width="287" height="40"/>
+                                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="12"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                                    <color key="value" name="CommonGrayColor"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter password"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="FAR-Ul-UZp" id="gJK-WM-Sef"/>
+                                                            </connections>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="2JD-GO-90E"/>
+                                                        <constraint firstItem="XYU-bh-TCR" firstAttribute="top" secondItem="VV6-1x-cgc" secondAttribute="top" constant="12" id="M7U-Ty-9op"/>
+                                                        <constraint firstItem="XYU-bh-TCR" firstAttribute="leading" secondItem="VV6-1x-cgc" secondAttribute="leading" constant="20" id="QRh-eb-bke"/>
+                                                        <constraint firstAttribute="bottom" secondItem="XYU-bh-TCR" secondAttribute="bottom" constant="4" id="csh-OJ-8C9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="XYU-bh-TCR" secondAttribute="trailing" constant="20" id="xx4-gd-NCm"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.boardUIColor">
+                                                            <color key="value" red="0.1960784314" green="0.2156862745" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-Od-TGf">
+                                                    <rect key="frame" x="44" y="4" width="113" height="14"/>
+                                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="113" id="res-H5-b26"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-R" family="OPPOSans" pointSize="12"/>
+                                                    <color key="textColor" name="CommonGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VV6-1x-cgc" firstAttribute="leading" secondItem="d48-sl-diu" secondAttribute="leadingMargin" constant="8" id="6dq-0R-zL6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VV6-1x-cgc" secondAttribute="bottom" constant="1" id="AHU-t4-8sL"/>
+                                                <constraint firstItem="7cS-Od-TGf" firstAttribute="top" secondItem="d48-sl-diu" secondAttribute="top" constant="4" id="Grj-Gg-JdB"/>
+                                                <constraint firstItem="7cS-Od-TGf" firstAttribute="leading" secondItem="d48-sl-diu" secondAttribute="leading" constant="44" id="Lq4-I8-UUZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VV6-1x-cgc" secondAttribute="trailing" constant="8" id="NGd-eL-UwM"/>
+                                                <constraint firstItem="VV6-1x-cgc" firstAttribute="top" secondItem="d48-sl-diu" secondAttribute="topMargin" constant="1" id="WFv-eY-NqW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="GzE-og-ryU" customClass="DefaultSelectBackgroundViewTableViewCell">
+                                        <rect key="frame" x="0.0" y="259" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GzE-og-ryU" id="Wf4-xN-63y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI4-xg-e3h" customClass="InputChangeBorderColorView">
+                                                    <rect key="frame" x="24" y="12" width="327" height="56"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="not-me-qUR" customClass="IQTextView">
+                                                            <rect key="frame" x="20" y="12" width="287" height="40"/>
+                                                            <color key="backgroundColor" name="BackgroundColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="OPPOSans-M" family="OPPOSans" pointSize="12"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                                    <color key="value" name="CommonGrayColor"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirm password"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="FAR-Ul-UZp" id="11p-i6-i49"/>
+                                                            </connections>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="S74-mU-Lcu"/>
+                                                        <constraint firstItem="not-me-qUR" firstAttribute="top" secondItem="cI4-xg-e3h" secondAttribute="top" constant="12" id="hod-NY-LIE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="not-me-qUR" secondAttribute="bottom" constant="4" id="j8A-wP-bsf"/>
+                                                        <constraint firstItem="not-me-qUR" firstAttribute="leading" secondItem="cI4-xg-e3h" secondAttribute="leading" constant="20" id="nNA-xq-eIC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="not-me-qUR" secondAttribute="trailing" constant="20" id="uA9-G3-e9J"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.boardUIColor">
+                                                            <color key="value" red="0.1960784314" green="0.2156862745" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGf-XV-BvK">
+                                                    <rect key="frame" x="44" y="4" width="113" height="14"/>
+                                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="113" id="1Xb-PL-fyc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OPPOSans-R" family="OPPOSans" pointSize="12"/>
+                                                    <color key="textColor" name="CommonGrayColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cI4-xg-e3h" firstAttribute="top" secondItem="Wf4-xN-63y" secondAttribute="topMargin" constant="1" id="5LN-dz-I7k"/>
+                                                <constraint firstItem="cI4-xg-e3h" firstAttribute="leading" secondItem="Wf4-xN-63y" secondAttribute="leadingMargin" constant="8" id="MNS-wm-7KG"/>
+                                                <constraint firstItem="oGf-XV-BvK" firstAttribute="leading" secondItem="Wf4-xN-63y" secondAttribute="leading" constant="44" id="NM9-9k-3zU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cI4-xg-e3h" secondAttribute="trailing" constant="8" id="gr1-6y-VsB"/>
+                                                <constraint firstItem="oGf-XV-BvK" firstAttribute="top" secondItem="Wf4-xN-63y" secondAttribute="top" constant="4" id="iEw-s3-ZSP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cI4-xg-e3h" secondAttribute="bottom" constant="1" id="rka-FS-daw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FAR-Ul-UZp" id="0Xy-V5-dQf"/>
+                            <outlet property="delegate" destination="FAR-Ul-UZp" id="2cA-sR-Bh1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="a7V-R5-04o"/>
+                    <connections>
+                        <outlet property="confirmPSWTextView" destination="not-me-qUR" id="glu-5V-f45"/>
+                        <outlet property="confirmPSWView" destination="cI4-xg-e3h" id="uh1-RW-JaT"/>
+                        <outlet property="confirmPasswordLabel" destination="oGf-XV-BvK" id="qbd-el-rnI"/>
+                        <outlet property="creatButton" destination="ITr-ga-EJb" id="ofY-uR-Ran"/>
+                        <outlet property="nameLabel" destination="2QO-8e-nLR" id="0DK-MR-nhC"/>
+                        <outlet property="nameTextView" destination="yGS-1a-wDY" id="S3I-xl-cTt"/>
+                        <outlet property="passwordLabel" destination="7cS-Od-TGf" id="NO9-2D-CEm"/>
+                        <outlet property="passwordTextView" destination="XYU-bh-TCR" id="RCI-s5-uXj"/>
+                        <outlet property="passwordView" destination="VV6-1x-cgc" id="JSe-55-jG0"/>
+                        <outlet property="walletNameView" destination="sCn-R9-zvB" id="INl-s8-cBJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVy-Ni-KKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ITr-ga-EJb">
+                    <rect key="frame" x="0.0" y="0.0" width="217" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OPPOSans-B" family="OPPOSans" pointSize="16"/>
+                    <state key="normal" title="Create wallet" backgroundImage="button">
+                        <color key="titleColor" name="BackgroundColor"/>
+                    </state>
+                    <state key="selected" backgroundImage="buttonSelect">
+                        <color key="titleColor" name="BackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="clickCreatButton:" destination="FAR-Ul-UZp" eventType="touchUpInside" id="9eX-tn-Dm3"/>
+                    </connections>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="2494" y="-297"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Fusotao" width="40" height="40"/>
         <image name="Mnemonic" width="15.5" height="14.5"/>
         <image name="Selected" width="16" height="16"/>
         <image name="Wallet_Monochromatic" width="375" height="283"/>
@@ -717,6 +1083,7 @@
         <image name="buttonSelect" width="15.5" height="48"/>
         <image name="caveat" width="16" height="16"/>
         <image name="deSelected" width="16" height="16"/>
+        <image name="disclosureIndicator" width="16" height="16"/>
         <image name="note" width="375" height="283"/>
         <image name="personoff" width="24" height="24"/>
         <image name="personon" width="24" height="24"/>

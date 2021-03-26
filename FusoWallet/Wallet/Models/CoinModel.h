@@ -11,9 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CoinModel : NSObject
 @property (nonatomic, strong) NSString *coinName;
-@property (nonatomic, strong) NSString *coinNumber;
-@property (nonatomic, strong) NSString *coinMoneyNumber;
+@property (nonatomic, strong) NSString *coinAmount;
+@property (nonatomic, strong) NSString *coinMoneyAmount;
+@property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSString *des;
 + (NSArray *)coinArray;
 @end
 
 NS_ASSUME_NONNULL_END
+

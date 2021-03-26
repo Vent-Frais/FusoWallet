@@ -12,6 +12,8 @@
 #import "JYEqualCellSpaceFlowLayout.h"
 
 @interface MnemonicViewController ()<UICollectionViewDelegateFlowLayout>
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *mnemonicCollectionView;
 @property (strong, nonatomic) NSArray *mnemonicArray;
 
@@ -23,6 +25,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initMnemonicArray];
+    NSString *title = _isBackup ? @"Backup mnemonic" : @"Your mnemonic";
+    NSString *detail = _isBackup ? @"TPlease copy the mnemonic words in order to ensure that the backup is correct" : @"Write down or copy these words in the correct order and keep them in a safe place";
+    _titleLabel.text = title;
+    _detailLabel.text = detail;
 }
 - (void)initMnemonicArray{
     NSString *mnemonicString = [[RpcRequest shared]CreatMnemonicString];
@@ -34,8 +40,6 @@
    
         // 设置每个item的大小，
     flowLayout.estimatedItemSize = CGSizeMake(70, 32);
-  
-    //    flowLayout.itemSize = CGSizeMake(CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
  
     // 设置列的最小间距
  
@@ -86,30 +90,6 @@
     return cell;
       
 }
-////组的头视图创建
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *collectionFootIdentifer = @"MnemonicCollectionReusableView";
-//
-//    if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
-//
-//            MnemonicCollectionReusableView *footView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:collectionFootIdentifer forIndexPath:indexPath];
-//
-//            return footView;
-//
-//
-//    }else{
-//       return (UICollectionReusableView *)[NSNull null];
-//    }
-//
-//
-//
-//}
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
-//
-//        return CGSizeMake(Screen_Width, 80);
-//
-//}
 
 
 #pragma mark - Navigation
@@ -120,6 +100,9 @@
     // Pass the selected object to the new view controller.
     VerifyMnemonicViewController *verifyVC = segue.destinationViewController;
     verifyVC.mnemonicArray = _mnemonicArray;
+    verifyVC.walletName = _walletName;
+    verifyVC.passphrase = _passphrase;
+    verifyVC.isBackup = _isBackup;
     
 }
 

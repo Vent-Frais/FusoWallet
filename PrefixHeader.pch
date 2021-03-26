@@ -10,6 +10,7 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
 #import <IrohaCrypto/IrohaCrypto-umbrella.h>
 #import <SocketRocket.h>
 #import <ZXNavigationBarController.h>
@@ -26,13 +27,17 @@
 #import "BaseViewController.h"
 #import "BaseNavViewController.h"
 #import "BaseNavTableViewController.h"
-#import "RpcRequest.h"
 #import "CALayer+boardColor.h"
 #import "UserInfoModel.h"
+#import "TransferAddressModel.h"
 #import "DefaultSelectBackgroundViewTableViewCell.h"
 #import "UIView+Extension.h"
 #import "UITextField+PlaceHolder.h"
 #import <ISMessages/ISMessages.h>
+#import "AppDelegate.h"
+#import "SegmentViewController.h"
+#import "InputChangeBorderColorView.h"
+#import "NoDataTableViewCell.h"
 
 #ifndef dispatch_main_async_safe
 #define dispatch_main_async_safe(block)\
@@ -47,6 +52,8 @@
 #else
 #define NSLog(format, ...) nil
 #endif
+
+#define KAppDelegate (AppDelegate *)[[UIApplication sharedApplication]delegate]
 //空字符串
 #define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 //空数组
@@ -68,6 +75,7 @@
 //#define ColorWork  [UIColor colorWithRed:65.0/255 green:105.0/255 blue:225.0/255 alpha:1]
 #define ColorOrange  [UIColor colorWithRed:255.0/255 green:120.0/255 blue:90.0/255 alpha:1]
 #define ColorBlue  [UIColor colorWithRed:23/255.0 green:126/255.0 blue:214/255.0 alpha:1]
+
 #define kWindow [[UIApplication sharedApplication].windows firstObject]
 #define kIsBangsScreen ({\
     BOOL isBangsScreen = NO; \
@@ -82,8 +90,10 @@
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
 
 //userInfo
-#define USERACCOUNT @"userAccount"
+#define USERACCOUNT @"userAccount.plist"
+#define TRANSFERADDRESS @"transferAddress.plist"
 
 #define FilePathWithName(fileName) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:fileName]
 
+#define Current_user_adress @"current_user_adress"
 #endif /* PrefixHeader_pch */

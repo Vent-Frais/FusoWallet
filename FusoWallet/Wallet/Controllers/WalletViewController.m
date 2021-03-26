@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.zx_navBarBackgroundColor = [UIColor colorNamed:@"CommonGReenColor70"];
-    [self zx_setRightBtnWithImgName:@"Filter" clickedBlock:^(UIButton * _Nonnull btn) {
+    [self zx_setLeftBtnWithImgName:@"Filter" clickedBlock:^(UIButton * _Nonnull btn) {
         NSLog(@"点击了最右侧的Button");
     }];
     _dataArray = [NSMutableArray array];
@@ -28,8 +28,8 @@
     for (int i = 0; i < array.count; i ++) {
         CoinModel *model = [[CoinModel alloc]init];
         model.coinName = array[i];
-        model.coinNumber = @"0.0000";
-        model.coinMoneyNumber = @"=$ 0.0000";
+        model.coinAmount = @"0.0000";
+        model.coinMoneyAmount = @"=$ 0.0000";
         [_dataArray addObject:model];
     }
     _tableView.rowHeight = 72.f;
@@ -38,7 +38,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+    
     return _dataArray.count;
 }
 

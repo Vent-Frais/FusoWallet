@@ -21,7 +21,7 @@
     TransferCoinModel *model = [[TransferCoinModel alloc]init];
     model.dateTime = [[NSDate date]timeIntervalSince1970];
     model.direction = @"Transfer InOrOut";
-    model.coinNumber = @"+888 TAO";
+    model.coinAmount = @"+888 TAO";
     _dataArray = [NSMutableArray array];
     for (int i = 0; i < 3; i ++) {
         [_dataArray addObject:model];
